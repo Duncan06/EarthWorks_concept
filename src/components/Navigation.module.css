@@ -1,0 +1,13 @@
+.navMain {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navButton {
+    display: flex;
+    flex: .5 1 auto;
+    justify-content: flex-end;
+    background-color: aqua;
+    height: 4rem;
+    width: auto;
+}
