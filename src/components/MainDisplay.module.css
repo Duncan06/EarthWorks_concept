@@ -1,3 +1,7 @@
+:root {
+  --mainHeight: 700px;
+}
+
 .welcome {
   display: flex;
   justify-content: center;
@@ -8,18 +12,32 @@
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  height: var(--mainHeight);
+  width: 100%;
 }
 
 .info {
-  grid-row: 2;
-  align-self: flex-start;
+  grid-row: 1;
+  height: 100%;
+  width: 50%;
   background-color: white;
-  animation: mainPage 5s ease-in;
+  animation: mainPage 5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.textTitle {
+  text-decoration: underline;
+  color:rgb(80, 133, 248);
+}
+
+.introText {
+  width: 80%;
+}
+
+.mainPicture {
+  width: 70%;
+  height: 60%;
+  animation: pictureEntry 6s ease-in;
 }
 
 @keyframes intro {
@@ -43,7 +61,24 @@
 
 @keyframes mainPage {
   0% {
-    opactiy: 0;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes pictureEntry {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
