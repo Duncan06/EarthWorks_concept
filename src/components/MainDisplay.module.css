@@ -8,7 +8,7 @@
   font-size: 100px;
   color: white;
   opacity: 0;
-  animation: intro 4s cubic-bezier(0.475, 0.885, 0.32, .875);
+  animation: intro 4s cubic-bezier(0.475, 0.885, 0.32, 0.875);
 }
 
 .main {
@@ -34,7 +34,7 @@
 
 .textTitle {
   text-decoration: underline;
-  color:rgb(80, 133, 248);
+  color: rgb(80, 133, 248);
 }
 
 .introText {
@@ -66,6 +66,32 @@
 
 .info2 > * {
   color: blue;
+}
+
+.mainAboutContainer {
+  display: flex;
+  width: 98%;
+  gap: 12px;
+  margin: 1% 0% 0% 1%;
+}
+
+.mainAbout {
+  flex: 1;
+  height: 800px;
+  background-color: white;
+  animation: fadeIn1 2s ease-in;
+}
+
+.mainAbout2 {
+  flex: 1;
+  background-color: white;
+  animation: fadeIn2 3s ease-in;
+}
+
+.mainAbout3 {
+  flex: 1;
+  background-color: white;
+  animation: fadeIn3 4s ease-in;
 }
 
 @keyframes intro {
@@ -112,3 +138,37 @@
     opacity: 1;
   }
 }
+
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
