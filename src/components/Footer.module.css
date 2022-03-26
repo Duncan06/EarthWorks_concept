@@ -1,0 +1,9 @@
+.footerMain {
+  display: flex;
+  background: rgb(2, 221, 2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+}

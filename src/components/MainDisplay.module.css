@@ -1,0 +1,51 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  color: white;
+  opacity: 0;
+  animation: intro 4s cubic-bezier(0.475, 0.885, 0.32, 1.075);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  grid-row: 2;
+  align-self: flex-start;
+  background-color: white;
+  animation: mainPage 5s ease-in;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes mainPage {
+  0% {
+    opactiy: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
