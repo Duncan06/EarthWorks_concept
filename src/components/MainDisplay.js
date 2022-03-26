@@ -14,7 +14,7 @@ function MainDisplay(props) {
                 Let us introduce ourselves, we're JC-EarthWorks. We are a two
                 man team comprising of John and Chris, who have been in the
                 business longer than we should care to share. We have experience
-                from building house from the ground up, all the way to
+                in building house from the ground up, all the way to
                 commericial construction working on projects worth hundreds of
                 millions. This include a variety of infrastructure projects with
                 various complexities, from cutting edge to everyday
@@ -24,6 +24,14 @@ function MainDisplay(props) {
                 className={classes.mainPicture}
                 src="https://eastislandsrentals.com/wp-content/uploads/2019/02/cooper-river-bridge-charleston-bridge-run-ravenel-bridge.jpg"
               />
+            </div>
+            <div className={classes.info2}>
+              <h1 className={classes.info2Title}>Specializations</h1> 
+              <h2>Foundation leveling</h2>
+              <h2>Irrigation</h2>
+              <h2>Site Anaylsis</h2>
+              <h2>Consulting</h2>
+              <h2>Code Compliance</h2>
             </div>
           </div>
         </div>

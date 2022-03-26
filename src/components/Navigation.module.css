@@ -23,7 +23,7 @@
   flex: 0.25 1 auto;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color: rgb(126, 255, 255);
   height: 4rem;
   width: auto;
 }

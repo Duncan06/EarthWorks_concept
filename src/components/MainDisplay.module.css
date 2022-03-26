@@ -8,21 +8,28 @@
   font-size: 100px;
   color: white;
   opacity: 0;
-  animation: intro 4s cubic-bezier(0.475, 0.885, 0.32, 1.075);
+  animation: intro 4s cubic-bezier(0.475, 0.885, 0.32, .875);
 }
 
 .main {
   display: flex;
+  gap: 3%;
   height: var(--mainHeight);
   width: 100%;
 }
 
 .info {
-  grid-row: 1;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 89%;
   width: 50%;
   background-color: white;
+  margin-left: 2%;
   animation: mainPage 5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.info > * {
+  margin-left: 1%;
 }
 
 .textTitle {
@@ -35,9 +42,30 @@
 }
 
 .mainPicture {
-  width: 70%;
-  height: 60%;
-  animation: pictureEntry 6s ease-in;
+  align-self: center;
+  width: 72.5%;
+  height: 50%;
+  margin-left: 0;
+  animation: pictureEntry 7s ease-in;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 89%;
+  width: 20%;
+  margin-left: 20%;
+}
+
+.info2Title {
+  color: rgb(105, 240, 105) !important;
+}
+
+.info2 > * {
+  color: blue;
 }
 
 @keyframes intro {
@@ -77,7 +105,7 @@
   0% {
     opacity: 0;
   }
-  80% {
+  70% {
     opacity: 0;
   }
   100% {
