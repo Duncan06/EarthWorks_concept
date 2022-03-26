@@ -14,10 +14,6 @@
 }
 
 .navButton {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  text-decoration: none;
   border: 1px solid black;
   display: flex;
   flex: 0.25 1 auto;

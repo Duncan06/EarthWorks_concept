@@ -36,6 +36,12 @@ function MainDisplay(props) {
           </div>
         </div>
       );
+    } else if (props.about) {
+      return (
+        <div>
+          <div className={classes.mainAbout}>Here we go.</div>
+        </div>
+      )
     }
   }
   return <div>{CurrentInformation()}</div>;

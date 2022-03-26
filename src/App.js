@@ -10,19 +10,43 @@ function App() {
   const [price, setPrice] = useState(false);
   const [contact, setContact] = useState(false);
 
+  function nowSetHome() {
+    setHome(true);
+    setAbout(false);
+    setPrice(false);
+    setContact(false);
+  }
+
+  function nowSetAbout() {
+    setHome(false);
+    setAbout(true);
+    setPrice(false);
+    setContact(false);
+  }
+
+  function nowSetPrice() {
+    setHome(false);
+    setAbout(false);
+    setPrice(true);
+    setContact(false);
+  }
+
+  function nowSetContact() {
+    setHome(false);
+    setAbout(false);
+    setPrice(false);
+    setContact(true);
+  }
+
   return (
     <div className="App">
-      <Navigation />
-      <MainDisplay
-        home={home}
-        setHome={setHome}
-        about={about}
-        setAbout={setAbout}
-        price={price}
-        setPrice={setPrice}
-        contact={contact}
-        setContact={setContact}
+      <Navigation
+        changeHome={nowSetHome}
+        changeAbout={nowSetAbout}
+        changePrice={nowSetPrice}
+        changeContact={nowSetContact}
       />
+      <MainDisplay home={home} about={about} price={price} contact={contact} />
       <Footer />
     </div>
   );

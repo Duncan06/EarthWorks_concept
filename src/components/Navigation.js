@@ -1,13 +1,13 @@
 import nav from "./Navigation.module.css";
 
-function Navigation() {
+function Navigation(props) {
   return (
     <header className={nav.navMain}>
       <div className={nav.logo}>JC-EarthWorks</div>
-      <div className={nav.navButton}>Home</div>
-      <div className={nav.navButton}>About us</div>
-      <div className={nav.navButton}>Pricing/Estimates</div>
-      <div className={nav.navButton}>Contact For Hire</div>
+      <button className={nav.navButton} onClick={props.changeHome}>Home</button>
+      <button className={nav.navButton} onClick={props.changeAbout}>About us</button>
+      <button className={nav.navButton} onClick={props.changePrice}>Pricing/Estimates</button>
+      <button className={nav.navButton} onClick={props.changeContact}>Contact For Hire</button>
     </header>
   );
 }
