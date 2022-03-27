@@ -8,10 +8,10 @@ function MainDisplay(props) {
           <div className={classes.welcome}>Welcome!</div>
           <div className={classes.main}>
             <div className={classes.info}>
-              <h1 className={classes.textTitle}>JC-EarthWorks</h1>
+              <h1 className={classes.textTitle}>J.C. EarthWorks</h1>
               <h4>We'd be happy to help with your next project.</h4>
               <p className={classes.introText}>
-                Let us introduce ourselves, we're JC-EarthWorks. We are a two
+                Let us introduce ourselves, we're J.C. EarthWorks. We are a two
                 man team comprising of John and Chris, who have been in the
                 business longer than we should care to share. We have experience
                 in building house from the ground up, all the way to commericial
@@ -125,7 +125,7 @@ function MainDisplay(props) {
               </div>
             </div>
             <div className={classes.mainPrice2}>
-              <h1 className={classes.innerTitle}>List For Consideration</h1> 
+              <h1 className={classes.innerTitle}>List For Consideration</h1>
               <div className={classes.mainPrice2Text}>
                 <p>Size of lot</p>
                 <p>Days of work</p>
@@ -136,6 +136,27 @@ function MainDisplay(props) {
                 <p>Location</p>
                 <p>Necessary equipment rentals</p>
                 <p>Website fees</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <div className={classes.mainContactContainer}>
+            <div className={classes.contactInfo}>
+              <h1 className={classes.innerTitle}>We look forward to getting in touch with you soon!</h1>
+              <br />
+              <h2 className={classes.emailPhoneInfo}>Email: j.c.earthworks@gmail.com</h2>
+              <h2 className={classes.emailPhoneInfo}>Phone: xxx-xxx-xxxx</h2>
+              <div className={classes.pictureContainer}>
+                <img className={classes.contactPic} src="https://media.istockphoto.com/photos/planet-earth-from-the-space-at-night-picture-id1271122894?k=20&m=1271122894&s=612x612&w=0&h=TcyxnFUi8up5cESNJSuXiHCFoiJb0AtT1u9QYVfreoQ=" />
+                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/theodolite-construction-site-12015421.jpg"/>
+                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/project-construction-renovation-house-49925875.jpg"/>
+                <img className={classes.contactPicRow2} src="https://thumbs.dreamstime.com/b/architect-engineer-working-concept-construction-tools-saf-architect-engineer-working-concept-construction-tools-118420998.jpg" />
+                <img className={classes.contactPicRow2} src="https://thumbs.dreamstime.com/b/new-home-construction-1408651.jpg" />
+                <img className={classes.contactPicRow2} src="https://thumbs.dreamstime.com/b/home-renovation-construction-diy-abstract-background-tools-wooden-board-closeup-140640845.jpg" />
               </div>
             </div>
           </div>
