@@ -161,7 +161,7 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  animation: fadeIn4 2s ease-in, slideDown2 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: fadeIn4 1.25s ease-in, slideDown2 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .emailPhoneInfo {
