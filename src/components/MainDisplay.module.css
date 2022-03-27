@@ -172,7 +172,7 @@
 .pictureContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 5% 0% 0% 3%;
+  margin: 5% 0% 0% 4%;
   gap: 1%;
   width: 100%;
 }
