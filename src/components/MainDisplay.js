@@ -40,7 +40,7 @@ function MainDisplay(props) {
         <div>
           <div className={classes.mainAboutContainer}>
             <div className={classes.mainAbout}>
-              <h1>Experience</h1>
+              <h1 className={classes.innerTitle}>Experience</h1>
               <p>
                 John and Chris have worked together professionally for over two
                 decades. They both have worked together under the professional
@@ -49,10 +49,63 @@ function MainDisplay(props) {
                 as well as personal work that would typically run for tens of
                 thousands of dollars if professionals were hired.
               </p>
+              <p>
+                There most likely is not an aspect of construction that either
+                of them have not touched. Also their amount of hands on
+                experience with machinary is second to none. They have both
+                worked up and down the east coast for multiple years,
+                experienceing a range of different soils, materials, and
+                conditions to work with.
+              </p>
             </div>
-            <div className={classes.mainAbout2}>Here we go.</div>
-            <div className={classes.mainAbout3}>Here we go.</div>
+            <div className={classes.mainAbout2}>
+              <h1 className={classes.innerTitle}>John's Background</h1>
+              <p>
+                John has worked professionally in construction for over 20
+                years. He has worked on numerous projects and has acquired the
+                following skillset:
+              </p>
+              <ul>
+                <li>Crane operation</li>
+                <li>Initial site setup</li>
+                <li>Electrical</li>
+                <li>Concrete</li>
+                <li>Carpentry</li>
+                <li>Soil Composite analysis</li>
+              </ul>
+              <img
+                className={classes.picAbout}
+                src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/images-s/2021/07_07/gate_family_s_02_m.jpg"
+              />
+            </div>
+            <div className={classes.mainAbout3}>
+              <h1 className={classes.innerTitle}>Chris's Background</h1>
+              <p>
+                Chris has worked in construction since before he was 18 years
+                old. He has worked for multiple construction companies as well
+                as taking on independent work when needed. Over the course of
+                his career he has gained the following skillset:
+              </p>
+              <ul>
+                <li>Crane operation</li>
+                <li>Initial site setup</li>
+                <li>Electrical</li>
+                <li>Concrete</li>
+                <li>Carpentry</li>
+                <li>Soil Composite analysis</li>
+              </ul>
+              <img
+                className={classes.picAbout}
+                src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/augmented-reality/huracan/huracan_evo/H-EVO_3.png"
+              />
+            </div>
           </div>
+        </div>
+      );
+    } else if (props.price) {
+      return (
+        <div>
+          <div className={classes.mainPriceContainer}></div>
         </div>
       );
     }

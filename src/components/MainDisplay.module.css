@@ -94,6 +94,15 @@
   animation: fadeIn3 4s ease-in;
 }
 
+.innerTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.picAbout {
+  width:100%;
+}
+
 @keyframes intro {
   0% {
     opacity: 0;
