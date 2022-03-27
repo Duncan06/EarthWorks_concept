@@ -100,7 +100,53 @@
 }
 
 .picAbout {
-  width:100%;
+  width: 100%;
+}
+
+.mainPriceContainer {
+  display: flex;
+  width: 98%;
+  gap: 12px;
+  margin: 4% 0% 0% 1%;
+}
+
+.mainPrice {
+  flex: 1;
+  height: 700px;
+  background-color: white;
+  animation: fadeIn2 1s ease-in, slideUp 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mainPrice2 {
+  flex: 1;
+  background-color: white;
+  animation: fadeIn3 2s ease-in, slideUp 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.innerPriceText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerPriceTextDisclaimer {
+  width: 80%;
+}
+
+.innerPriceText2 {
+  width: 80%;
+}
+
+.mainPrice2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainPrice2 > * {
+  font-size: larger;
+  color:rgb(80, 133, 248);
+  text-align: center;
 }
 
 @keyframes intro {
@@ -181,3 +227,11 @@
   }
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(-20%)
+  }
+  100% {
+    transform: translateY(0%)
+  }
+}
