@@ -9,7 +9,7 @@ function MainDisplay(props) {
           <div className={classes.main}>
             <div className={classes.info}>
               <h1 className={classes.textTitle}>J.C. EarthWorks</h1>
-              <h4>We'd be happy to help with your next project.</h4>
+              <div className={classes.introHeader}>We'd be happy to help with your next project.</div>
               <p className={classes.introText}>
                 Let us introduce ourselves, we're J.C. EarthWorks. We are a two
                 man team comprising of John and Chris, who have been in the
@@ -21,7 +21,8 @@ function MainDisplay(props) {
               </p>
               <img
                 className={classes.mainPicture}
-                src="https://eastislandsrentals.com/wp-content/uploads/2019/02/cooper-river-bridge-charleston-bridge-run-ravenel-bridge.jpg"
+                src="https://thumbs.dreamstime.com/b/cooper-river-bridge-charleston-south-carolina-5888528.jpg"
+                alt="mainPic1"
               />
             </div>
             <div className={classes.info2}>
@@ -75,7 +76,8 @@ function MainDisplay(props) {
               </ul>
               <img
                 className={classes.picAbout}
-                src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/images-s/2021/07_07/gate_family_s_02_m.jpg"
+                src="https://thumbs.dreamstime.com/b/lamborghini-aventador-lp-superveloce-test-drive-day-hong-kong-china-aug-aug-hong-kong-63226553.jpg"
+                alt="aboutPic1"
               />
             </div>
             <div className={classes.mainAbout3}>
@@ -96,7 +98,8 @@ function MainDisplay(props) {
               </ul>
               <img
                 className={classes.picAbout}
-                src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/augmented-reality/huracan/huracan_evo/H-EVO_3.png"
+                src="https://thumbs.dreamstime.com/b/lamborghini-choun-buri-august-tron-supercars-aventador-car-display-thailand-super-series-race-august-bira-33090437.jpg"
+                alt="aboutPic2"
               />
             </div>
           </div>
@@ -146,17 +149,45 @@ function MainDisplay(props) {
         <div>
           <div className={classes.mainContactContainer}>
             <div className={classes.contactInfo}>
-              <h1 className={classes.innerTitle}>We look forward to getting in touch with you soon!</h1>
+              <h1 className={classes.innerTitle}>
+                We look forward to getting in touch with you soon!
+              </h1>
               <br />
-              <h2 className={classes.emailPhoneInfo}>Email: j.c.earthworks@gmail.com</h2>
+              <h2 className={classes.emailPhoneInfo}>
+                Email: j.c.earthworks@gmail.com
+              </h2>
               <h2 className={classes.emailPhoneInfo}>Phone: xxx-xxx-xxxx</h2>
               <div className={classes.pictureContainer}>
-                <img className={classes.contactPic} src="https://media.istockphoto.com/photos/planet-earth-from-the-space-at-night-picture-id1271122894?k=20&m=1271122894&s=612x612&w=0&h=TcyxnFUi8up5cESNJSuXiHCFoiJb0AtT1u9QYVfreoQ=" />
-                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/theodolite-construction-site-12015421.jpg"/>
-                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/project-construction-renovation-house-49925875.jpg"/>
-                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/architect-engineer-working-concept-construction-tools-saf-architect-engineer-working-concept-construction-tools-118420998.jpg" />
-                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/new-home-construction-1408651.jpg" />
-                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/home-renovation-construction-diy-abstract-background-tools-wooden-board-closeup-140640845.jpg" />
+                <img
+                  className={classes.contactPic}
+                  src="https://thumbs.dreamstime.com/b/planet-earth-space-night-some-elements-image-furnished-nasa-111176972.jpg"
+                  alt="contactPic1"
+                />
+                <img
+                  className={classes.contactPic}
+                  src="https://thumbs.dreamstime.com/b/theodolite-construction-site-12015421.jpg"
+                  alt="contactPic2"
+                />
+                <img
+                  className={classes.contactPic}
+                  src="https://thumbs.dreamstime.com/b/project-construction-renovation-house-49925875.jpg"
+                  alt="contactPic3"
+                />
+                <img
+                  className={classes.contactPic}
+                  src="https://thumbs.dreamstime.com/b/architect-engineer-working-concept-construction-tools-saf-architect-engineer-working-concept-construction-tools-118420998.jpg"
+                  alt="contactPic4"
+                />
+                <img
+                  className={classes.contactPic}
+                  src="https://thumbs.dreamstime.com/b/new-home-construction-1408651.jpg"
+                  alt="contactPic5"
+                />
+                <img
+                  className={classes.contactPic}
+                  src="https://thumbs.dreamstime.com/b/home-renovation-construction-diy-abstract-background-tools-wooden-board-closeup-140640845.jpg"
+                  alt="contactPic6"
+                />
               </div>
             </div>
           </div>
