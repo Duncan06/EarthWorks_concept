@@ -154,9 +154,9 @@ function MainDisplay(props) {
                 <img className={classes.contactPic} src="https://media.istockphoto.com/photos/planet-earth-from-the-space-at-night-picture-id1271122894?k=20&m=1271122894&s=612x612&w=0&h=TcyxnFUi8up5cESNJSuXiHCFoiJb0AtT1u9QYVfreoQ=" />
                 <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/theodolite-construction-site-12015421.jpg"/>
                 <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/project-construction-renovation-house-49925875.jpg"/>
-                <img className={classes.contactPicRow2} src="https://thumbs.dreamstime.com/b/architect-engineer-working-concept-construction-tools-saf-architect-engineer-working-concept-construction-tools-118420998.jpg" />
-                <img className={classes.contactPicRow2} src="https://thumbs.dreamstime.com/b/new-home-construction-1408651.jpg" />
-                <img className={classes.contactPicRow2} src="https://thumbs.dreamstime.com/b/home-renovation-construction-diy-abstract-background-tools-wooden-board-closeup-140640845.jpg" />
+                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/architect-engineer-working-concept-construction-tools-saf-architect-engineer-working-concept-construction-tools-118420998.jpg" />
+                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/new-home-construction-1408651.jpg" />
+                <img className={classes.contactPic} src="https://thumbs.dreamstime.com/b/home-renovation-construction-diy-abstract-background-tools-wooden-board-closeup-140640845.jpg" />
               </div>
             </div>
           </div>

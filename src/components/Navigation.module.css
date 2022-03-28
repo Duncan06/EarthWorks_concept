@@ -25,8 +25,19 @@
 }
 
 .navButton:hover {
-    background-color: rgb(39, 247, 167);
-    transition: 0.4s ease-in;
-    color: white;
-    cursor: pointer;
+  background-color: rgb(39, 247, 167);
+  transition: 0.4s ease-in;
+  color: white;
+  cursor: pointer;
+}
+
+@media(max-width:1000px) {
+  .logo {
+    flex: 1 .2 auto;
+    height: 4rem;
+    font-size: large;
   }
+  .navButton {
+    flex: 1 .5 auto;
+  }
+}
