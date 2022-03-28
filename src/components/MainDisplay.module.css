@@ -78,12 +78,12 @@
   display: flex;
   width: 98%;
   gap: 12px;
-  margin: 1% 0% 0% 1%;
+  margin: 1% 0% 3.5% 1%;
 }
 
 .mainAbout {
   flex: 1;
-  height: 800px;
+  height: 775px;
   background-color: white;
   animation: fadeIn1 2s ease-in;
 }
@@ -113,7 +113,7 @@
   display: flex;
   width: 98%;
   gap: 12px;
-  margin: 4% 0% 0% 1%;
+  margin: 4% 0% 3% 1%;
 }
 
 .mainPrice {
@@ -161,8 +161,8 @@
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 800px;
-  margin: .5% 0% 0% 20%;
+  height: 750px;
+  margin: 1% 0% 0% 20%;
 }
 
 .contactInfo {
@@ -181,13 +181,13 @@
 .pictureContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 4% 0% 0% 9%;
+  margin: 0% 0% 0% 16.5%;
   gap: 1%;
   width: 90%;
 }
 
 .contactPic {
-  width: 30%;
+  width: 25%;
   margin-top: 2%;
 }
 
@@ -226,6 +226,7 @@
 @media (max-width: 1000px) {
   .mainAboutContainer {
     flex-direction: column;
+    margin: 5% 0% 5% 1%;
   }
 
   .mainPriceContainer {
@@ -243,6 +244,7 @@
 
   .pictureContainer {
     height: 10%;
+    margin: 0% 0% 0% 10%;
   }
 
   .contactPic {
