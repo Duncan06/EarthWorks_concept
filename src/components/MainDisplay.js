@@ -13,11 +13,9 @@ function MainDisplay(props) {
               <p className={classes.introText}>
                 Let us introduce ourselves, we're J.C. EarthWorks. We are a two
                 man team comprising of John and Chris, who have been in the
-                business longer than we should care to share. We have experience
-                in building house from the ground up, all the way to commericial
-                construction working on projects worth hundreds of millions.
-                This include a variety of infrastructure projects with various
-                complexities, from cutting edge to everyday construction.
+                business longer than we should care to share. We are a foundation 
+                and structural improvement team who specialize in a number of areas
+                and we'd be glad to assist with your next project.
               </p>
               <img
                 className={classes.mainPicture}
