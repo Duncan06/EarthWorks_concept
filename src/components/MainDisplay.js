@@ -14,8 +14,8 @@ function MainDisplay(props) {
                 Let us introduce ourselves, we're J.C. EarthWorks. We are a two
                 man team comprising of John and Chris, who have been in the
                 business longer than we should care to share. We are a foundation 
-                and structural improvement team who specialize in a number of areas
-                and we'd be glad to assist with your next project.
+                and structural improvement team who specialize in a number of areas.
+                If you need assitance we'd be glad to lend our expertise.
               </p>
               <img
                 className={classes.mainPicture}
