@@ -9,13 +9,16 @@ function MainDisplay(props) {
           <div className={classes.main}>
             <div className={classes.info}>
               <h1 className={classes.textTitle}>J.C. EarthWorks</h1>
-              <div className={classes.introHeader}>We'd be happy to help with your next project.</div>
+              <div className={classes.introHeader}>
+                We'd be happy to help with your next project.
+              </div>
               <p className={classes.introText}>
                 Let us introduce ourselves, we're J.C. EarthWorks. We are a two
                 man team comprising of John and Chris, who have been in the
-                business longer than we should care to share. We are a foundation 
-                and structural improvement team who specialize in a number of areas.
-                If you need assitance we'd be glad to lend our expertise.
+                business longer than we should care to share. We are a
+                foundation and structural improvement team who specialize in a
+                number of areas. If you need assitance we'd be glad to lend our
+                expertise.
               </p>
               <img
                 className={classes.mainPicture}
@@ -152,7 +155,10 @@ function MainDisplay(props) {
               </h1>
               <br />
               <h2 className={classes.emailPhoneInfo}>
-                Email: j.c.earthworks@gmail.com
+                Email:&nbsp;
+                <a href="mailto:j.c.earthworks@gmail.com?subject=Project Request">
+                  j.c.earthworks@gmail.com
+                </a>
               </h2>
               <h2 className={classes.emailPhoneInfo}>Phone: xxx-xxx-xxxx</h2>
               <div className={classes.pictureContainer}>
