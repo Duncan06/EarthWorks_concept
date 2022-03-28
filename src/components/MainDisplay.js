@@ -21,7 +21,7 @@ function MainDisplay(props) {
               </p>
               <img
                 className={classes.mainPicture}
-                src="https://thumbs.dreamstime.com/b/cooper-river-bridge-charleston-south-carolina-5888528.jpg"
+                src="https://media.istockphoto.com/photos/ravenel-bridge-in-charleston-sc-picture-id117751351?b=1&k=20&m=117751351&s=170667a&w=0&h=WeN8wG9l2j08vTbP2W7hN5luC6PB4478TnHgCGh6IJY="
                 alt="mainPic1"
               />
             </div>
