@@ -1,6 +1,7 @@
 .navMain {
   display: flex;
   justify-content: flex-end;
+  background-color: #43454b;
 }
 
 .logo {
@@ -10,7 +11,6 @@
   align-items: center;
   font-size: xx-large;
   color: white;
-  background-color: #43454b;
 }
 
 .navButton {
@@ -19,25 +19,24 @@
   flex: 0.25 1 auto;
   justify-content: center;
   align-items: center;
-  background-color: rgb(126, 255, 255);
+  background: linear-gradient(135deg, #2affff 30%, #13ff9d);
   height: 4rem;
   width: auto;
 }
 
 .navButton:hover {
-  background-color: rgb(39, 247, 167);
-  transition: 0.4s ease-in;
   color: white;
   cursor: pointer;
+  background: linear-gradient(135deg, #2aff8a 30%, #138dff);
 }
 
-@media(max-width:1000px) {
+@media (max-width: 1000px) {
   .logo {
-    flex: 1 .2 auto;
+    flex: 1 0.2 auto;
     height: 4rem;
     font-size: large;
   }
   .navButton {
-    flex: 1 .5 auto;
+    flex: 1 0.5 auto;
   }
 }
