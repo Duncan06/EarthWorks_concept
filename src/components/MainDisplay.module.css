@@ -34,7 +34,9 @@
 
 .textTitle {
   text-decoration: underline;
-  color: rgb(80, 133, 248);
+  background: -webkit-linear-gradient(rgb(117, 228, 117), rgb(63, 132, 236));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .introHeader {
@@ -67,11 +69,24 @@
 }
 
 .info2Title {
-  color: rgb(105, 240, 105) !important;
+  background: -webkit-linear-gradient(rgb(255, 223, 78), rgb(248, 5, 5));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.info2 > * {
-  color: blue;
+.info2 > *:nth-child(1n+2) {
+  background: -webkit-linear-gradient(rgb(117, 228, 117), rgb(63, 132, 236));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info2 > *:nth-child(2n+2) {
+  background: -webkit-linear-gradient(rgb(228, 117, 209), rgb(198, 236, 63));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .mainAboutContainer {
