@@ -90,15 +90,7 @@ function App() {
         changePrice={nowSetPrice}
         changeContact={nowSetContact}
       />
-      <MainDisplay
-        home={home}
-        about={about}
-        price={price}
-        contact={contact}
-        firstAbout={firstTimeAbout}
-        firstPrice={firstTimePrice}
-        firstContact={firstTimeContact}
-      />
+      <MainDisplay home={home} about={about} price={price} contact={contact} />
       <Footer />
     </div>
   );
