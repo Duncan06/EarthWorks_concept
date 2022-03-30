@@ -1,5 +1,19 @@
 :root {
   --mainHeight: 700px;
+  --animation-time-1: 4s;
+  --animation-time-2: 5s;
+  --animation-time-3: 7s;
+  --animation-time-3: 7s;
+  --animation-time-4: 9s;
+  --animation-time-5: 2s;
+  --animation-time-6: 3s;
+  --animation-time-7: 4s;
+  --animation-time-8: 1s;
+  --animation-time-9: 2s;
+  --animation-time-10: 2s;
+  --animation-time-11: 2s;
+  --animation-time-12: 1.25s;
+  --animation-time-13: 3s;
 }
 
 .welcome {
@@ -8,7 +22,7 @@
   font-size: 100px;
   color: white;
   opacity: 0;
-  animation: intro 4s cubic-bezier(0.475, 0.885, 0.32, 0.875);
+  animation: intro var(--animation-time-1) cubic-bezier(0.475, 0.885, 0.32, 0.875);
 }
 
 .main {
@@ -25,7 +39,7 @@
   width: 50%;
   background: linear-gradient(#ffffff, #9b9b9b);
   margin-left: 2%;
-  animation: mainPage 5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: mainPage var(--animation-time-2) cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .info > * {
@@ -54,7 +68,7 @@
   width: 66.5%;
   height: 50%;
   margin-right: 20%;
-  animation: pictureEntry 7s ease-in;
+  animation: pictureEntry var(--animation-time-3) ease-in;
 }
 
 .info2 {
@@ -66,7 +80,7 @@
   height: 89%;
   width: 20%;
   margin-left: 20%;
-  animation: smallInfo 9s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: smallInfo var(--animation-time-4) cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .info2Title {
@@ -104,7 +118,7 @@
   flex: 1;
   height: 775px;
   background: linear-gradient(#fcfcfc, #999999);
-  animation: fadeIn1 2s ease-in;
+  animation: fadeIn1 var(--animation-time-5) ease-in;
 }
 
 .mainAbout > * {
@@ -122,7 +136,7 @@
   flex-direction: column;
   flex: 1;
   background: linear-gradient(#fcfcfc, #999999);
-  animation: fadeIn2 3s ease-in;
+  animation: fadeIn2 var(--animation-time-6) ease-in;
 }
 
 .mainAbout2 > * {
@@ -135,7 +149,7 @@
   flex-direction: column;
   flex: 1;
   background: linear-gradient(#fcfcfc, #999999);
-  animation: fadeIn3 4s ease-in;
+  animation: fadeIn3 var(--animation-time-7) ease-in;
 }
 
 .mainAbout3 > * {
@@ -157,15 +171,15 @@
   flex: 1;
   height: 700px;
   background: linear-gradient(#fcfcfc, #999999);
-  animation: fadeIn2 1s ease-in,
-    slideDown 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: fadeIn2 var(--animation-time-8) ease-in,
+    slideDown var(--animation-time-9) cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .mainPrice2 {
   flex: 1;
   background: linear-gradient(#fcfcfc, #999999);;
-  animation: fadeIn3 2s ease-in,
-    slideDown 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: fadeIn3 var(--animation-time-10) ease-in,
+    slideDown var(--animation-time-11) cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .innerPriceText {
@@ -205,8 +219,8 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(#fcfcfc, #999999);
-  animation: fadeIn4 1.25s ease-in,
-    slideDown2 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: fadeIn4 var(--animation-time-12) ease-in,
+    slideDown2 var(--animation-time-13) cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .emailPhoneInfo {
