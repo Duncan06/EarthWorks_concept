@@ -35,6 +35,7 @@
 .textTitle {
   text-decoration: underline;
   background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

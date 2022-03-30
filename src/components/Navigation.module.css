@@ -27,7 +27,7 @@
 .navButton:hover {
   color: white;
   cursor: pointer;
-  background: linear-gradient(135deg, #2aff8a 30%, #138dff);
+  background: linear-gradient(135deg, #21352a 30%, #138dff);
 }
 
 @media (max-width: 1000px) {
