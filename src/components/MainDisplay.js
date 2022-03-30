@@ -59,6 +59,54 @@ function MainDisplay(props) {
                 experienceing a range of different soils, materials, and
                 conditions to work with.
               </p>
+              <p>
+                John and Chris have worked together professionally for over two
+                decades. They both have worked together under the professional
+                construction company FlatIron for years. In addition to this
+                They have taken on jobs as a two man team doing freelance work,
+                as well as personal work that would typically run for tens of
+                thousands of dollars if professionals were hired.
+              </p>
+              <p>
+                There most likely is not an aspect of construction that either
+                of them have not touched. Also their amount of hands on
+                experience with machinary is second to none. They have both
+                worked up and down the east coast for multiple years,
+                experienceing a range of different soils, materials, and
+                conditions to work with.
+              </p>
+              <p>
+                John and Chris have worked together professionally for over two
+                decades. They both have worked together under the professional
+                construction company FlatIron for years. In addition to this
+                They have taken on jobs as a two man team doing freelance work,
+                as well as personal work that would typically run for tens of
+                thousands of dollars if professionals were hired.
+              </p>
+              <p>
+                There most likely is not an aspect of construction that either
+                of them have not touched. Also their amount of hands on
+                experience with machinary is second to none. They have both
+                worked up and down the east coast for multiple years,
+                experienceing a range of different soils, materials, and
+                conditions to work with.
+              </p>
+              <p>
+                John and Chris have worked together professionally for over two
+                decades. They both have worked together under the professional
+                construction company FlatIron for years. In addition to this
+                They have taken on jobs as a two man team doing freelance work,
+                as well as personal work that would typically run for tens of
+                thousands of dollars if professionals were hired.
+              </p>
+              <p>
+                There most likely is not an aspect of construction that either
+                of them have not touched. Also their amount of hands on
+                experience with machinary is second to none. They have both
+                worked up and down the east coast for multiple years,
+                experienceing a range of different soils, materials, and
+                conditions to work with.
+              </p>
             </div>
             <div className={classes.mainAbout2}>
               <h1 className={classes.innerTitle}>John's Background</h1>

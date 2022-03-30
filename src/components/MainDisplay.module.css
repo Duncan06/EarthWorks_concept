@@ -16,6 +16,23 @@
   --animation-time-13: 3s;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .welcome {
   display: flex;
   justify-content: center;
@@ -121,6 +138,7 @@
   height: 775px;
   border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
+  overflow: scroll;
   animation: fadeIn1 var(--animation-time-5) ease-in;
 }
 
