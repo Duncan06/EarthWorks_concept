@@ -69,21 +69,21 @@
 }
 
 .info2Title {
-  background: -webkit-linear-gradient(rgb(255, 223, 78), rgb(248, 5, 5));
+  background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .info2 > *:nth-child(1n+2) {
-  background: -webkit-linear-gradient(rgb(117, 228, 117), rgb(63, 132, 236));
+  background: -webkit-linear-gradient(rgb(54, 255, 14), #fc18a4);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .info2 > *:nth-child(2n+2) {
-  background: -webkit-linear-gradient(rgb(228, 117, 209), rgb(198, 236, 63));
+  background: -webkit-linear-gradient(rgb(148, 40, 248), rgb(187, 216, 80));
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
