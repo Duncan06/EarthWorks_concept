@@ -37,6 +37,7 @@
   flex-direction: column;
   height: 89%;
   width: 50%;
+  border-radius: 1%;
   background: linear-gradient(#ffffff, #9b9b9b);
   margin-left: 2%;
   animation: mainPage var(--animation-time-2) cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -76,6 +77,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   height: 89%;
   width: 20%;
@@ -117,6 +119,7 @@
   flex-direction: column;
   flex: 1;
   height: 775px;
+  border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   animation: fadeIn1 var(--animation-time-5) ease-in;
 }
@@ -135,6 +138,7 @@
   align-items: center;
   flex-direction: column;
   flex: 1;
+  border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   animation: fadeIn2 var(--animation-time-6) ease-in;
 }
@@ -148,6 +152,7 @@
   align-items: center;
   flex-direction: column;
   flex: 1;
+  border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   animation: fadeIn3 var(--animation-time-7) ease-in;
 }
@@ -170,6 +175,7 @@
 .mainPrice {
   flex: 1;
   height: 700px;
+  border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   animation: fadeIn2 var(--animation-time-8) ease-in,
     slideDown var(--animation-time-9) cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -177,6 +183,7 @@
 
 .mainPrice2 {
   flex: 1;
+  border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);;
   animation: fadeIn3 var(--animation-time-10) ease-in,
     slideDown var(--animation-time-11) cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -218,6 +225,7 @@
 .contactInfo {
   width: 100%;
   height: 100%;
+  border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   animation: fadeIn4 var(--animation-time-12) ease-in,
     slideDown2 var(--animation-time-13) cubic-bezier(0.075, 0.82, 0.165, 1);
