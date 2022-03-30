@@ -139,7 +139,6 @@ function MainDisplay(props) {
                 <p>Going over contracted hours</p>
                 <p>Location</p>
                 <p>Necessary equipment rentals</p>
-                <p>Website fees</p>
               </div>
             </div>
           </div>

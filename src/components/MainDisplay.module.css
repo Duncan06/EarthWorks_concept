@@ -141,7 +141,7 @@
 
 .mainPrice2 {
   flex: 1;
-  background: linear-gradient(#1f1f1f, #575757);
+  background: linear-gradient(#ffffff, #575757);;
   animation: fadeIn3 2s ease-in,
     slideDown 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -166,19 +166,8 @@
   align-items: center;
 }
 
-.mainPrice2 > h1 {
-  background: -webkit-linear-gradient(30deg, rgb(0, 105, 167), #050c31);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
 .mainPrice2 > *:nth-child(n+2) {
   font-size: x-large;
-  background: -webkit-linear-gradient(30deg, rgb(0, 6, 94), #037a43);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
