@@ -9,6 +9,7 @@
   flex: 3 1 auto;
   justify-content: center;
   align-items: center;
+  font-family: "Cormorant SC", serif;
   font-size: xx-large;
   color: white;
 }
@@ -19,6 +20,7 @@
   flex: 0.25 1 auto;
   justify-content: center;
   align-items: center;
+  font-family: "Mohave", sans-serif;
   background: linear-gradient(135deg, #2affff 30%, #13ff9d);
   height: 4rem;
   width: auto;
