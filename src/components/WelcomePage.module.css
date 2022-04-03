@@ -1,0 +1,219 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  color: white;
+  opacity: 0;
+  animation: intro var(--animation-time-1)
+    cubic-bezier(0.475, 0.885, 0.32, 0.875);
+}
+
+.main {
+  display: flex;
+  gap: 3%;
+  height: var(--mainHeight);
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 110%;
+  width: 50%;
+  border-radius: 1%;
+  background: linear-gradient(#ffffff, #9b9b9b);
+  margin: -5% 0% 0% 2%;
+  animation: mainPage var(--animation-time-2)
+    cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.info > * {
+  margin-left: 13.5%;
+}
+
+.textTitle {
+  font-family: "Cormorant SC", serif;
+  text-decoration: underline;
+  background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.introHeader {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.introText {
+  width: 70%;
+}
+
+.mainPicture {
+  align-self: center;
+  width: 66.5%;
+  height: 50%;
+  margin: 5% 5% 0% 0%;
+  animation: pictureEntry var(--animation-time-3) ease-in;
+}
+
+.info2 {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 0.01fr repeat(3, minmax(100px, 1fr)) 0.01fr;
+  grid-template-rows: 0.01fr 2fr 2fr 0.01fr;
+  border-radius: 1%;
+  background: linear-gradient(#fcfcfc, #999999);
+  height: 110%;
+  width: 40%;
+  margin: -5% 0% 0% 3%;
+  animation: smallInfo var(--animation-time-4)
+    cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.info2Title {
+  grid-column: 1/6;
+  align-self: center;
+  justify-self: center;
+  background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info2 > button {
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  border: none;
+  border-radius: 10%;
+  height: 110%;
+  width: 80%;
+}
+
+.info2 > button:nth-child(2n) {
+  grid-column: 2;
+}
+
+.info2 > button:nth-child(3n) {
+  grid-column: 3;
+}
+
+.info2 > button:nth-child(4n) {
+  grid-column: 4;
+}
+
+.optionOneHome {
+  background: -webkit-linear-gradient(30deg, #db9600, rgb(212, 195, 97));
+}
+
+.optionOneHome:hover {
+  background: -webkit-linear-gradient(30deg, #533900, rgb(212, 195, 97));
+  color: white;
+}
+
+.optionOneIcon {
+  margin-top: 30%;
+  font-size: 500% !important;
+}
+
+.optionTwoIcon {
+  margin-top: 46%;
+  font-size: 500% !important;
+}
+
+.optionTwoHome {
+  background: -webkit-linear-gradient(30deg, #2affff, rgb(1, 156, 177));
+}
+
+.optionTwoHome:hover {
+  background: -webkit-linear-gradient(30deg, #0b9b9b, rgb(15, 255, 255));
+  color: white;
+}
+
+.optionThreeHome {
+  background: -webkit-linear-gradient(30deg, #2affa6, rgb(141, 236, 63));
+}
+
+.optionThreeHome:hover {
+  background: -webkit-linear-gradient(30deg, #1d9b66, rgb(141, 236, 63));
+  color: white;
+}
+
+.optionFourHome {
+  background: -webkit-linear-gradient(#b3b4b4, rgb(39, 108, 212));
+}
+
+.optionFourHome:hover {
+  background: -webkit-linear-gradient(#b3b4b4, rgb(16, 39, 75));
+  color: white;
+}
+
+.optionFiveHome {
+  background: -webkit-linear-gradient(#ff782a, rgb(236, 63, 63));
+}
+
+.optionFiveHome:hover {
+  background: -webkit-linear-gradient(#88431b, rgb(165, 26, 26));
+  color: white;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes mainPage {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes pictureEntry {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smallInfo {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
