@@ -95,8 +95,8 @@
 .info2 {
   display: grid;
   gap: 5%;
-  grid-template-columns: .01fr repeat(3, minmax(100px, 1fr)) .01fr;
-  grid-template-rows: .01fr 2fr 2fr .01fr;
+  grid-template-columns: 0.01fr repeat(3, minmax(100px, 1fr)) 0.01fr;
+  grid-template-rows: 0.01fr 2fr 2fr 0.01fr;
   border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   height: 110%;
@@ -116,7 +116,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.info2 > h2 {
+.info2 > div {
   grid-column: 2/3;
   justify-self: center;
   align-self: center;
@@ -126,36 +126,46 @@
   width: 100%;
 }
 
-.info2 > h2:nth-child(2n) {
+.info2 > div:nth-child(2n) {
   grid-column: 2;
 }
 
-.info2 > h2:nth-child(3n) {
+.info2 > div:nth-child(3n) {
   grid-column: 3;
 }
 
-.info2 > h2:nth-child(4n) {
+.info2 > div:nth-child(4n) {
   grid-column: 4;
 }
 
-.optionOneHome{
-  background: -webkit-linear-gradient(30deg, #db9600, rgb(212, 195, 97))
+.optionOneHome {
+  background: -webkit-linear-gradient(30deg, #db9600, rgb(212, 195, 97));
 }
 
-.optionTwoHome{
-  background: -webkit-linear-gradient(30deg, #2affff, rgb(1, 156, 177))
+.optionOneIcon {
+  margin-top: 30%;
+  font-size: 500% !important;
 }
 
-.optionThreeHome{
-  background: -webkit-linear-gradient(30deg, #2affa6, rgb(141, 236, 63))
+.optionTwoIcon {
+  margin-top: 46%;
+  font-size: 500% !important;
 }
 
-.optionFourHome{
-  background: -webkit-linear-gradient(#b3b4b4, rgb(39, 108, 212))
+.optionTwoHome {
+  background: -webkit-linear-gradient(30deg, #2affff, rgb(1, 156, 177));
 }
 
-.optionFiveHome{
-  background: -webkit-linear-gradient(#ff782a, rgb(236, 63, 63))
+.optionThreeHome {
+  background: -webkit-linear-gradient(30deg, #2affa6, rgb(141, 236, 63));
+}
+
+.optionFourHome {
+  background: -webkit-linear-gradient(#b3b4b4, rgb(39, 108, 212));
+}
+
+.optionFiveHome {
+  background: -webkit-linear-gradient(#ff782a, rgb(236, 63, 63));
 }
 
 .mainAboutContainer {

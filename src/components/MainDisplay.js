@@ -1,4 +1,11 @@
 import classes from "./MainDisplay.module.css";
+import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+import SunnyIcon from "@material-ui/icons/WbSunny";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
+import LocalShippingIcon from "@material-ui/icons/Landscape";
+import GridOnIcon from "@material-ui/icons/GridOn";
+
+
 
 function MainDisplay(props) {
   function CurrentInformation() {
@@ -28,11 +35,26 @@ function MainDisplay(props) {
             </div>
             <div className={classes.info2}>
               <h1 className={classes.info2Title}>Specializations</h1>
-              <h2 className={classes.optionOneHome}>Foundation leveling</h2>
-              <h2 className={classes.optionTwoHome}>Irrigation</h2>
-              <h2 className={classes.optionThreeHome}>Site Anaylsis</h2>
-              <h2 className={classes.optionFourHome}>Consulting</h2>
-              <h2 className={classes.optionFiveHome}>Code Compliance</h2>
+              <div className={classes.optionOneHome}>
+                <h2>Foundation leveling</h2>
+                <LocalShippingIcon className={classes.optionOneIcon} />
+              </div>
+              <div className={classes.optionTwoHome}>
+                <h2>Irrigation</h2>
+                <SunnyIcon className={classes.optionTwoIcon} />
+              </div>
+              <div className={classes.optionThreeHome}>
+                <h2>Site Anaylsis</h2>
+                <GridOnIcon className={classes.optionTwoIcon} />
+              </div>
+              <div className={classes.optionFourHome}>
+                <h2>Consulting</h2>
+                <VerifiedUserIcon className={classes.optionTwoIcon} />
+              </div>
+              <div className={classes.optionFiveHome}>
+                <h2>Code Compliance</h2>
+                <MenuBookIcon className={classes.optionTwoIcon} />
+              </div>
             </div>
           </div>
         </div>
