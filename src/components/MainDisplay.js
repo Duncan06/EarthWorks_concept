@@ -35,26 +35,26 @@ function MainDisplay(props) {
             </div>
             <div className={classes.info2}>
               <h1 className={classes.info2Title}>Specializations</h1>
-              <div className={classes.optionOneHome}>
+              <button className={classes.optionOneHome}>
                 <h2>Foundation leveling</h2>
                 <LocalShippingIcon className={classes.optionOneIcon} />
-              </div>
-              <div className={classes.optionTwoHome}>
+              </button>
+              <button className={classes.optionTwoHome}>
                 <h2>Irrigation</h2>
                 <SunnyIcon className={classes.optionTwoIcon} />
-              </div>
-              <div className={classes.optionThreeHome}>
+              </button>
+              <button className={classes.optionThreeHome}>
                 <h2>Site Anaylsis</h2>
                 <GridOnIcon className={classes.optionTwoIcon} />
-              </div>
-              <div className={classes.optionFourHome}>
+              </button>
+              <button className={classes.optionFourHome}>
                 <h2>Consulting</h2>
                 <VerifiedUserIcon className={classes.optionTwoIcon} />
-              </div>
-              <div className={classes.optionFiveHome}>
+              </button>
+              <button className={classes.optionFiveHome}>
                 <h2>Code Compliance</h2>
                 <MenuBookIcon className={classes.optionOneIcon} />
-              </div>
+              </button>
             </div>
           </div>
         </div>

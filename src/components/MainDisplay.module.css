@@ -116,30 +116,36 @@
   -webkit-text-fill-color: transparent;
 }
 
-.info2 > div {
+.info2 > button {
   grid-column: 2/3;
   justify-self: center;
   align-self: center;
   text-align: center;
+  border: none;
   border-radius: 10%;
   height: 110%;
   width: 80%;
 }
 
-.info2 > div:nth-child(2n) {
+.info2 > button:nth-child(2n) {
   grid-column: 2;
 }
 
-.info2 > div:nth-child(3n) {
+.info2 > button:nth-child(3n) {
   grid-column: 3;
 }
 
-.info2 > div:nth-child(4n) {
+.info2 > button:nth-child(4n) {
   grid-column: 4;
 }
 
 .optionOneHome {
   background: -webkit-linear-gradient(30deg, #db9600, rgb(212, 195, 97));
+}
+
+.optionOneHome:hover {
+  background: -webkit-linear-gradient(30deg, #533900, rgb(212, 195, 97));
+  color: white;
 }
 
 .optionOneIcon {
@@ -156,16 +162,36 @@
   background: -webkit-linear-gradient(30deg, #2affff, rgb(1, 156, 177));
 }
 
+.optionTwoHome:hover {
+  background: -webkit-linear-gradient(30deg, #0b9b9b, rgb(15, 255, 255));
+  color: white;
+}
+
 .optionThreeHome {
   background: -webkit-linear-gradient(30deg, #2affa6, rgb(141, 236, 63));
+}
+
+.optionThreeHome:hover {
+  background: -webkit-linear-gradient(30deg, #1d9b66, rgb(141, 236, 63));
+  color: white;
 }
 
 .optionFourHome {
   background: -webkit-linear-gradient(#b3b4b4, rgb(39, 108, 212));
 }
 
+.optionFourHome:hover {
+  background: -webkit-linear-gradient(#b3b4b4, rgb(16, 39, 75));
+  color: white;
+}
+
 .optionFiveHome {
   background: -webkit-linear-gradient(#ff782a, rgb(236, 63, 63));
+}
+
+.optionFiveHome:hover {
+  background: -webkit-linear-gradient(#88431b, rgb(165, 26, 26));
+  color: white;
 }
 
 .mainAboutContainer {
@@ -335,39 +361,14 @@
     height: 700px;
     margin: 2% 0% 5% 5%;
   }
-
-  .info2 > div {
-    grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    border-radius: 10%;
-    height: 100%;
-    width: 80%;
-  }
-
+  
   .optionOneIcon {
-    margin-top: 20%;
+    margin-top: 0%;
     font-size: 400% !important;
   }
 
   .optionTwoIcon {
-    margin-top: 20%;
-    font-size: 400% !important;
-  }
-
-  .optionThreeIcon {
-    margin-top: 20%;
-    font-size: 400% !important;
-  }
-
-  .optionFourIcon {
-    margin-top: 20%;
-    font-size: 400% !important;
-  }
-
-  .optionFiveIcon {
-    margin-top: 20%;
+    margin-top: 0%;
     font-size: 400% !important;
   }
 
