@@ -123,7 +123,7 @@
   text-align: center;
   border-radius: 10%;
   height: 110%;
-  width: 100%;
+  width: 80%;
 }
 
 .info2 > div:nth-child(2n) {
@@ -347,12 +347,27 @@
   }
 
   .optionOneIcon {
-    margin-top: 0%;
+    margin-top: 20%;
     font-size: 400% !important;
   }
 
   .optionTwoIcon {
-    margin-top: 0%;
+    margin-top: 20%;
+    font-size: 400% !important;
+  }
+
+  .optionThreeIcon {
+    margin-top: 20%;
+    font-size: 400% !important;
+  }
+
+  .optionFourIcon {
+    margin-top: 20%;
+    font-size: 400% !important;
+  }
+
+  .optionFiveIcon {
+    margin-top: 20%;
     font-size: 400% !important;
   }
 

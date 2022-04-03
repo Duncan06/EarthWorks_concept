@@ -53,7 +53,7 @@ function MainDisplay(props) {
               </div>
               <div className={classes.optionFiveHome}>
                 <h2>Code Compliance</h2>
-                <MenuBookIcon className={classes.optionTwoIcon} />
+                <MenuBookIcon className={classes.optionOneIcon} />
               </div>
             </div>
           </div>
