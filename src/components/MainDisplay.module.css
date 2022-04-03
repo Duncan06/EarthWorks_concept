@@ -319,17 +319,41 @@
     gap: 3%;
     width: 100%;
     height: 100%;
-    margin: 2% 0% 2% 20%;
   }
 
   .mainPicture {
     margin-bottom: 5%;
   }
 
+  .info {
+    width: 90%;
+    margin: -8% 0% 0% 5%;
+  }
+
   .info2 {
-    width: 50%;
+    width: 90%;
+    height: 700px;
+    margin: 2% 0% 5% 5%;
+  }
+
+  .info2 > div {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    border-radius: 10%;
     height: 100%;
-    margin: 2% 0% 2% 2%;
+    width: 80%;
+  }
+
+  .optionOneIcon {
+    margin-top: 0%;
+    font-size: 400% !important;
+  }
+
+  .optionTwoIcon {
+    margin-top: 0%;
+    font-size: 400% !important;
   }
 
   .pictureContainer {
@@ -341,17 +365,10 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .info {
-    width: 50%;
-  }
-
-  .info2 {
-    width: 50%;
-  }
-}
-
 @media (max-width: 1000px) {
+  .info {
+    margin: -12% 0% 0% 5%;
+  }
   .mainAboutContainer {
     flex-direction: column;
     margin: 5% 0% 5% 1%;
@@ -382,6 +399,9 @@
 }
 
 @media (max-width: 550px) {
+  .info {
+    margin: -20% 0% 0% 5%;
+  }
   .pictureContainer {
     width: 80%;
     margin-left: 13%;
