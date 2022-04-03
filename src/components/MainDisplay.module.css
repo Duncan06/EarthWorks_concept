@@ -1,6 +1,6 @@
 :root {
   --mainHeight: 700px;
-  --animation-time-1: 4s;
+  --animation-time-1: 3s;
   --animation-time-2: 5s;
   --animation-time-3: 7s;
   --animation-time-3: 7s;
@@ -53,11 +53,11 @@
 .info {
   display: flex;
   flex-direction: column;
-  height: 89%;
+  height: 110%;
   width: 50%;
   border-radius: 1%;
   background: linear-gradient(#ffffff, #9b9b9b);
-  margin-left: 2%;
+  margin: -5% 0% 0% 2%;
   animation: mainPage var(--animation-time-2)
     cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
@@ -88,43 +88,42 @@
   align-self: center;
   width: 66.5%;
   height: 50%;
-  margin-right: 20%;
+  margin: 5% 5% 0% 0%;
   animation: pictureEntry var(--animation-time-3) ease-in;
 }
 
 .info2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: .5fr 2fr 2fr .5fr;
   border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
-  height: 89%;
-  width: 20%;
-  margin-left: 20%;
+  height: 110%;
+  width: 40%;
+  margin: -5% 0% 0% 3%;
   animation: smallInfo var(--animation-time-4)
     cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .info2Title {
+  grid-column: 1/4;
+  align-self: center;
+  justify-self: center;
   background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.info2 > *:nth-child(1n + 2) {
-  background: -webkit-linear-gradient(45deg, rgb(70, 71, 87), #000000);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.info2 > *:nth-child(2n + 2) {
-  background: -webkit-linear-gradient(45deg, rgb(51, 52, 59), #000000);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.info2 > h2 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  border-radius: 10%;
+  height: 110%;
+  width: 80%;
+  background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236))
 }
 
 .mainAboutContainer {
