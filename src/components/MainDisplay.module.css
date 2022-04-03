@@ -124,7 +124,6 @@
   border-radius: 10%;
   height: 110%;
   width: 100%;
-  background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236))
 }
 
 .info2 > h2:nth-child(2n) {
@@ -137,6 +136,26 @@
 
 .info2 > h2:nth-child(4n) {
   grid-column: 4;
+}
+
+.optionOneHome{
+  background: -webkit-linear-gradient(30deg, #db9600, rgb(212, 195, 97))
+}
+
+.optionTwoHome{
+  background: -webkit-linear-gradient(30deg, #2affff, rgb(1, 156, 177))
+}
+
+.optionThreeHome{
+  background: -webkit-linear-gradient(30deg, #2affa6, rgb(141, 236, 63))
+}
+
+.optionFourHome{
+  background: -webkit-linear-gradient(#b3b4b4, rgb(39, 108, 212))
+}
+
+.optionFiveHome{
+  background: -webkit-linear-gradient(#ff782a, rgb(236, 63, 63))
 }
 
 .mainAboutContainer {

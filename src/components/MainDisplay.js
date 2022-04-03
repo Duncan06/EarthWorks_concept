@@ -28,11 +28,11 @@ function MainDisplay(props) {
             </div>
             <div className={classes.info2}>
               <h1 className={classes.info2Title}>Specializations</h1>
-              <h2>Foundation leveling</h2>
-              <h2>Irrigation</h2>
-              <h2>Site Anaylsis</h2>
-              <h2>Consulting</h2>
-              <h2>Code Compliance</h2>
+              <h2 className={classes.optionOneHome}>Foundation leveling</h2>
+              <h2 className={classes.optionTwoHome}>Irrigation</h2>
+              <h2 className={classes.optionThreeHome}>Site Anaylsis</h2>
+              <h2 className={classes.optionFourHome}>Consulting</h2>
+              <h2 className={classes.optionFiveHome}>Code Compliance</h2>
             </div>
           </div>
         </div>
