@@ -95,8 +95,8 @@
 .info2 {
   display: grid;
   gap: 5%;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  grid-template-rows: .5fr 2fr 2fr .5fr;
+  grid-template-columns: .01fr repeat(3, minmax(100px, 1fr)) .01fr;
+  grid-template-rows: .01fr 2fr 2fr .01fr;
   border-radius: 1%;
   background: linear-gradient(#fcfcfc, #999999);
   height: 110%;
@@ -107,7 +107,7 @@
 }
 
 .info2Title {
-  grid-column: 1/4;
+  grid-column: 1/6;
   align-self: center;
   justify-self: center;
   background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
@@ -117,13 +117,26 @@
 }
 
 .info2 > h2 {
+  grid-column: 2/3;
   justify-self: center;
   align-self: center;
   text-align: center;
   border-radius: 10%;
   height: 110%;
-  width: 80%;
+  width: 100%;
   background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236))
+}
+
+.info2 > h2:nth-child(2n) {
+  grid-column: 2;
+}
+
+.info2 > h2:nth-child(3n) {
+  grid-column: 3;
+}
+
+.info2 > h2:nth-child(4n) {
+  grid-column: 4;
 }
 
 .mainAboutContainer {
