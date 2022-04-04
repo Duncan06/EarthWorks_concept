@@ -18,6 +18,8 @@ function Welcome(props) {
         changeOption4={props.changeOption4}
         option5={props.option5}
         changeOption5={props.changeOption5}
+        next={props.next}
+        previous={props.previous}
       />
     );
   } else if (props.option2) {
@@ -32,6 +34,8 @@ function Welcome(props) {
         changeOption4={props.changeOption4}
         option5={props.option5}
         changeOption5={props.changeOption5}
+        next={props.next}
+        previous={props.previous}
       />
     );
   } else if (props.option3) {
@@ -46,6 +50,8 @@ function Welcome(props) {
         changeOption4={props.changeOption4}
         option5={props.option5}
         changeOption5={props.changeOption5}
+        next={props.next}
+        previous={props.previous}
       />
     );
   } else if (props.option4) {
@@ -60,6 +66,8 @@ function Welcome(props) {
         changeOption4={props.changeOption4}
         option5={props.option5}
         changeOption5={props.changeOption5}
+        next={props.next}
+        previous={props.previous}
       />
     );
   } else if (props.option5) {
@@ -74,6 +82,8 @@ function Welcome(props) {
         changeOption4={props.changeOption4}
         option5={props.option5}
         changeOption5={props.changeOption5}
+        next={props.next}
+        previous={props.previous}
       />
     );
   } else {
@@ -88,6 +98,8 @@ function Welcome(props) {
         changeOption4={props.changeOption4}
         option5={props.option5}
         changeOption5={props.changeOption5}
+        next={props.next}
+        previous={props.previous}
       />
     );
   }

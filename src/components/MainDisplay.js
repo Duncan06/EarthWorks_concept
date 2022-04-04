@@ -19,6 +19,8 @@ function MainDisplay(props) {
           changeOption4={props.changeOption4}
           option5={props.option5}
           changeOption5={props.changeOption5}
+          next={props.next}
+          previous={props.previous}
         />
       );
     } else if (props.about) {

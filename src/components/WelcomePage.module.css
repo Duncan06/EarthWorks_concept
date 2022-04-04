@@ -57,6 +57,36 @@
   animation: pictureEntry var(--animation-time-3) ease-in;
 }
 
+.buttonContainer {
+  display: grid;
+  margin-top: 3%;
+  gap: 10%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.previousButton {
+  border: none;
+  margin-left: -20%;
+  height: 200%;
+  width: 90%;
+  background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
+}
+
+.previousButton:hover {
+  background: -webkit-linear-gradient(#27a1a1, rgb(63, 132, 236));
+}
+
+.nextButton {
+  border: none;
+  height: 200%;
+  width: 80%;
+  background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
+}
+
+.nextButton:hover {
+  background: -webkit-linear-gradient(#27a1a1, rgb(63, 132, 236));
+}
+
 .info2 {
   display: grid;
   gap: 5%;
@@ -182,7 +212,7 @@
     height: 700px;
     margin: 2% 0% 5% 5%;
   }
-  
+
   .optionOneIcon {
     margin-top: 0%;
     font-size: 400% !important;

@@ -76,6 +76,38 @@ function App() {
     notFirstHome();
   }
 
+  function next() {
+    if (option1) {
+      changeOption2();
+    } else if (option2) {
+      changeOption3();
+    } else if (option3) {
+      changeOption4();
+    } else if (option4) {
+      changeOption5();
+    } else if (option5) {
+      nowSetHome();
+    } else {
+      changeOption1();
+    }
+  }
+
+  function previous() {
+    if (option1) {
+      nowSetHome();
+    } else if (option2) {
+      changeOption1();
+    } else if (option3) {
+      changeOption2();;
+    } else if (option4) {
+      changeOption3();
+    } else if (option5) {
+      changeOption4();
+    } else {
+      changeOption5();
+    }
+  }
+
   function nowSetAbout() {
     setHome(false);
     setAbout(true);
@@ -160,6 +192,8 @@ function App() {
         changeOption4={changeOption4}
         option5={option5}
         changeOption5={changeOption5}
+        next={next}
+        previous={previous}
       />
       <Footer />
     </div>

@@ -21,6 +21,14 @@ function Option4(props) {
             src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
             alt="mainPic1"
           />
+          <div className={classes.buttonContainer}>
+            <button className={classes.previousButton} onClick={props.previous}>
+              Previous
+            </button>
+            <button className={classes.nextButton} onClick={props.next}>
+              Next
+            </button>
+          </div>
         </div>
         <div className={classes.info2}>
           <h1 className={classes.info2Title}>Specializations</h1>

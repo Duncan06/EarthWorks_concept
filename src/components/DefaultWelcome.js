@@ -27,6 +27,10 @@ function DefaultWelcome(props) {
             src="https://media.istockphoto.com/photos/ravenel-bridge-in-charleston-sc-picture-id117751351?b=1&k=20&m=117751351&s=170667a&w=0&h=WeN8wG9l2j08vTbP2W7hN5luC6PB4478TnHgCGh6IJY="
             alt="mainPic1"
           />
+          <div className={classes.buttonContainer}>
+            <button className={classes.previousButton} onClick={props.previous}>Previous</button>
+            <button className={classes.nextButton} onClick={props.next}>Next</button>
+          </div>
         </div>
         <div className={classes.info2}>
           <h1 className={classes.info2Title}>Specializations</h1>
