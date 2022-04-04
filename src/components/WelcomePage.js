@@ -1,60 +1,96 @@
-import classes from "./WelcomePage.module.css";
-import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
-import SunnyIcon from "@material-ui/icons/WbSunny";
-import MenuBookIcon from "@material-ui/icons/MenuBook";
-import LocalShippingIcon from "@material-ui/icons/Landscape";
-import GridOnIcon from "@material-ui/icons/GridOn";
+import Option1 from "./Option1Welcome";
+import Option2 from "./Option2Welcome";
+import Option3 from "./Option3Welcome";
+import Option4 from "./Option4Welcome";
+import Option5 from "./Option5Welcome";
+import DefaultWelcome from "./DefaultWelcome";
 
-function Welcome() {
-    return(
-        <div>
-          <div className={classes.welcome}>Welcome!</div>
-          <div className={classes.main}>
-            <div className={classes.info}>
-              <h1 className={classes.textTitle}>J.C. EarthWorks</h1>
-              <div className={classes.introHeader}>
-                We'd be happy to help with your next project.
-              </div>
-              <p className={classes.introText}>
-                Let us introduce ourselves, we're J.C. EarthWorks. We are a two
-                man team comprising of John and Chris, who have been in the
-                business longer than we should care to share. We are a
-                foundation and structural improvement team who specialize in a
-                number of areas. If you need assitance we'd be glad to lend our
-                expertise.
-              </p>
-              <img
-                className={classes.mainPicture}
-                src="https://media.istockphoto.com/photos/ravenel-bridge-in-charleston-sc-picture-id117751351?b=1&k=20&m=117751351&s=170667a&w=0&h=WeN8wG9l2j08vTbP2W7hN5luC6PB4478TnHgCGh6IJY="
-                alt="mainPic1"
-              />
-            </div>
-            <div className={classes.info2}>
-              <h1 className={classes.info2Title}>Specializations</h1>
-              <button className={classes.optionOneHome}>
-                <h2>Foundation leveling</h2>
-                <LocalShippingIcon className={classes.optionOneIcon} />
-              </button>
-              <button className={classes.optionTwoHome}>
-                <h2>Irrigation</h2>
-                <SunnyIcon className={classes.optionTwoIcon} />
-              </button>
-              <button className={classes.optionThreeHome}>
-                <h2>Site Anaylsis</h2>
-                <GridOnIcon className={classes.optionTwoIcon} />
-              </button>
-              <button className={classes.optionFourHome}>
-                <h2>Consulting</h2>
-                <VerifiedUserIcon className={classes.optionTwoIcon} />
-              </button>
-              <button className={classes.optionFiveHome}>
-                <h2>Code Compliance</h2>
-                <MenuBookIcon className={classes.optionOneIcon} />
-              </button>
-            </div>
-          </div>
-        </div>
-    )
+function Welcome(props) {
+  if (props.option1) {
+    return (
+      <Option1
+        changeOption1={props.changeOption1}
+        option2={props.option2}
+        changeOption2={props.changeOption2}
+        option3={props.option3}
+        changeOption3={props.changeOption3}
+        option4={props.option4}
+        changeOption4={props.changeOption4}
+        option5={props.option5}
+        changeOption5={props.changeOption5}
+      />
+    );
+  } else if (props.option2) {
+    return (
+      <Option2
+        changeOption1={props.changeOption1}
+        option2={props.option2}
+        changeOption2={props.changeOption2}
+        option3={props.option3}
+        changeOption3={props.changeOption3}
+        option4={props.option4}
+        changeOption4={props.changeOption4}
+        option5={props.option5}
+        changeOption5={props.changeOption5}
+      />
+    );
+  } else if (props.option3) {
+    return (
+      <Option3
+        changeOption1={props.changeOption1}
+        option2={props.option2}
+        changeOption2={props.changeOption2}
+        option3={props.option3}
+        changeOption3={props.changeOption3}
+        option4={props.option4}
+        changeOption4={props.changeOption4}
+        option5={props.option5}
+        changeOption5={props.changeOption5}
+      />
+    );
+  } else if (props.option4) {
+    return (
+      <Option4
+        changeOption1={props.changeOption1}
+        option2={props.option2}
+        changeOption2={props.changeOption2}
+        option3={props.option3}
+        changeOption3={props.changeOption3}
+        option4={props.option4}
+        changeOption4={props.changeOption4}
+        option5={props.option5}
+        changeOption5={props.changeOption5}
+      />
+    );
+  } else if (props.option5) {
+    return (
+      <Option5
+        changeOption1={props.changeOption1}
+        option2={props.option2}
+        changeOption2={props.changeOption2}
+        option3={props.option3}
+        changeOption3={props.changeOption3}
+        option4={props.option4}
+        changeOption4={props.changeOption4}
+        option5={props.option5}
+        changeOption5={props.changeOption5}
+      />
+    );
+  } else {
+    return (
+      <DefaultWelcome
+        changeOption1={props.changeOption1}
+        option2={props.option2}
+        changeOption2={props.changeOption2}
+        option3={props.option3}
+        changeOption3={props.changeOption3}
+        option4={props.option4}
+        changeOption4={props.changeOption4}
+        option5={props.option5}
+        changeOption5={props.changeOption5}
+      />
+    );
+  }
 }
 
 export default Welcome;

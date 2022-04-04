@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import Navigation from "./components/Navigation";
 import MainDisplay from "./components/MainDisplay";
@@ -12,12 +12,67 @@ function App() {
   const [firstTimeAbout, setFirstTimeAbout] = useState(true);
   const [firstTimePrice, setFirstTimePrice] = useState(true);
   const [firstTimeContact, setFirstTimeContact] = useState(true);
+  const [option1, setOption1] = useState(false);
+  const [option2, setOption2] = useState(false);
+  const [option3, setOption3] = useState(false);
+  const [option4, setOption4] = useState(false);
+  const [option5, setOption5] = useState(false);
 
   function nowSetHome() {
     setHome(true);
     setAbout(false);
     setPrice(false);
     setContact(false);
+    setOption1(false);
+    setOption2(false);
+    setOption3(false);
+    setOption4(false);
+    setOption5(false);
+    notFirstHome();
+  }
+
+  function changeOption1() {
+    setOption1(true);
+    setOption2(false);
+    setOption3(false);
+    setOption4(false);
+    setOption5(false);
+    notFirstHome();
+  }
+
+  function changeOption2() {
+    setOption1(false);
+    setOption2(true);
+    setOption3(false);
+    setOption4(false);
+    setOption5(false);
+    notFirstHome();
+  }
+
+  function changeOption3() {
+    setOption1(false);
+    setOption2(false);
+    setOption3(true);
+    setOption4(false);
+    setOption5(false);
+    notFirstHome();
+  }
+
+  function changeOption4() {
+    setOption1(false);
+    setOption2(false);
+    setOption3(false);
+    setOption4(true);
+    setOption5(false);
+    notFirstHome();
+  }
+
+  function changeOption5() {
+    setOption1(false);
+    setOption2(false);
+    setOption3(false);
+    setOption4(false);
+    setOption5(true);
     notFirstHome();
   }
 
@@ -90,7 +145,22 @@ function App() {
         changePrice={nowSetPrice}
         changeContact={nowSetContact}
       />
-      <MainDisplay home={home} about={about} price={price} contact={contact} />
+      <MainDisplay
+        home={home}
+        about={about}
+        price={price}
+        contact={contact}
+        option1={option1}
+        changeOption1={changeOption1}
+        option2={option2}
+        changeOption2={changeOption2}
+        option3={option3}
+        changeOption3={changeOption3}
+        option4={option4}
+        changeOption4={changeOption4}
+        option5={option5}
+        changeOption5={changeOption5}
+      />
       <Footer />
     </div>
   );

@@ -7,7 +7,20 @@ import ContactPage from "./ContactPage";
 function MainDisplay(props) {
   function CurrentInformation() {
     if (props.home) {
-      return <WelcomePage />;
+      return (
+        <WelcomePage
+          option1={props.option1}
+          changeOption1={props.changeOption1}
+          option2={props.option2}
+          changeOption2={props.changeOption2}
+          option3={props.option3}
+          changeOption3={props.changeOption3}
+          option4={props.option4}
+          changeOption4={props.changeOption4}
+          option5={props.option5}
+          changeOption5={props.changeOption5}
+        />
+      );
     } else if (props.about) {
       return <AboutPage />;
     } else if (props.price) {
