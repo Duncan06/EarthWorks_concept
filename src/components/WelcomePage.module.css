@@ -68,10 +68,18 @@
 
 .previousButton {
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
   margin-left: -20%;
   height: 200%;
   width: 90%;
   background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
+}
+
+.previousButton > * {
+  margin-left: -20%;
 }
 
 .previousButton:hover {
@@ -80,9 +88,17 @@
 
 .nextButton {
   border: none;
+  display: flex;
+  gap: 20%;
+  justify-content: center;
+  align-items: center;
   height: 200%;
   width: 80%;
   background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
+}
+
+.nextButton > * {
+  margin-right: -20%;
 }
 
 .nextButton:hover {

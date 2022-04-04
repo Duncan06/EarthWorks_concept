@@ -4,6 +4,8 @@ import SunnyIcon from "@material-ui/icons/WbSunny";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import LocalShippingIcon from "@material-ui/icons/Landscape";
 import GridOnIcon from "@material-ui/icons/GridOn";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 function Option2(props) {
   return (
@@ -25,10 +27,10 @@ function Option2(props) {
           </div>
           <div className={classes.buttonContainer}>
             <button className={classes.previousButton} onClick={props.previous}>
-              Previous
+              <ArrowBackIcon /> Previous
             </button>
             <button className={classes.nextButton} onClick={props.next}>
-              Next
+              Next <ArrowForwardIcon />
             </button>
           </div>
         </div>
