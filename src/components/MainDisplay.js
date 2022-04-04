@@ -9,6 +9,7 @@ function MainDisplay(props) {
     if (props.home) {
       return (
         <WelcomePage
+          notHome={props.notHome}
           option1={props.option1}
           changeOption1={props.changeOption1}
           option2={props.option2}

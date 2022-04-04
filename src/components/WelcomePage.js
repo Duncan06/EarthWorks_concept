@@ -9,6 +9,7 @@ function Welcome(props) {
   if (props.option1) {
     return (
       <Option1
+        option1={props.option1}
         changeOption1={props.changeOption1}
         option2={props.option2}
         changeOption2={props.changeOption2}
@@ -25,6 +26,7 @@ function Welcome(props) {
   } else if (props.option2) {
     return (
       <Option2
+        option1={props.option1}
         changeOption1={props.changeOption1}
         option2={props.option2}
         changeOption2={props.changeOption2}
@@ -41,6 +43,7 @@ function Welcome(props) {
   } else if (props.option3) {
     return (
       <Option3
+        option1={props.option1}
         changeOption1={props.changeOption1}
         option2={props.option2}
         changeOption2={props.changeOption2}
@@ -57,6 +60,7 @@ function Welcome(props) {
   } else if (props.option4) {
     return (
       <Option4
+        option1={props.option1}
         changeOption1={props.changeOption1}
         option2={props.option2}
         changeOption2={props.changeOption2}
@@ -73,6 +77,7 @@ function Welcome(props) {
   } else if (props.option5) {
     return (
       <Option5
+        option1={props.option1}
         changeOption1={props.changeOption1}
         option2={props.option2}
         changeOption2={props.changeOption2}
@@ -89,6 +94,8 @@ function Welcome(props) {
   } else {
     return (
       <DefaultWelcome
+        notHome={props.notHome}
+        option1={props.option1}
         changeOption1={props.changeOption1}
         option2={props.option2}
         changeOption2={props.changeOption2}

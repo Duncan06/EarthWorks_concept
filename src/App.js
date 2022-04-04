@@ -17,6 +17,7 @@ function App() {
   const [option3, setOption3] = useState(false);
   const [option4, setOption4] = useState(false);
   const [option5, setOption5] = useState(false);
+  const [notHome, setNotHome] = useState(false);
 
   function nowSetHome() {
     setHome(true);
@@ -37,6 +38,7 @@ function App() {
     setOption3(false);
     setOption4(false);
     setOption5(false);
+    setNotHome(false);
     notFirstHome();
   }
 
@@ -46,6 +48,7 @@ function App() {
     setOption3(false);
     setOption4(false);
     setOption5(false);
+    setNotHome(false);
     notFirstHome();
   }
 
@@ -55,6 +58,7 @@ function App() {
     setOption3(true);
     setOption4(false);
     setOption5(false);
+    setNotHome(false);
     notFirstHome();
   }
 
@@ -64,6 +68,7 @@ function App() {
     setOption3(false);
     setOption4(true);
     setOption5(false);
+    setNotHome(false);
     notFirstHome();
   }
 
@@ -73,6 +78,7 @@ function App() {
     setOption3(false);
     setOption4(false);
     setOption5(true);
+    setNotHome(false);
     notFirstHome();
   }
 
@@ -113,6 +119,7 @@ function App() {
     setAbout(true);
     setPrice(false);
     setContact(false);
+    setNotHome(true);
     if (firstTimeAbout) {
       setFirstTimeAbout(false);
     } else {
@@ -125,6 +132,7 @@ function App() {
     setAbout(false);
     setPrice(true);
     setContact(false);
+    setNotHome(true);
     if (firstTimePrice) {
       setFirstTimePrice(false);
     } else {
@@ -137,6 +145,7 @@ function App() {
     setAbout(false);
     setPrice(false);
     setContact(true);
+    setNotHome(true);
     if (firstTimeContact) {
       setFirstTimeContact(false);
     } else {
@@ -179,6 +188,7 @@ function App() {
       />
       <MainDisplay
         home={home}
+        notHome={notHome}
         about={about}
         price={price}
         contact={contact}

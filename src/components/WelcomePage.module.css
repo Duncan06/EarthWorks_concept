@@ -61,7 +61,7 @@
   display: grid;
   gap: 10%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   animation: fadeInButtons var(--animation-time-4)
     cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
@@ -87,6 +87,16 @@
 
 .nextButton:hover {
   background: -webkit-linear-gradient(#27a1a1, rgb(63, 132, 236));
+}
+
+.defaultSelection {
+  animation: newPage 2s
+    cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.defaultHome {
+  width: 100%;
+  height: 90%;
 }
 
 .newSelection {
