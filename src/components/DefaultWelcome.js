@@ -28,8 +28,12 @@ function DefaultWelcome(props) {
             alt="mainPic1"
           />
           <div className={classes.buttonContainer}>
-            <button className={classes.previousButton} onClick={props.previous}>Previous</button>
-            <button className={classes.nextButton} onClick={props.next}>Next</button>
+            <button className={classes.previousButton} onClick={props.previous}>
+              Previous
+            </button>
+            <button className={classes.nextButton} onClick={props.next}>
+              Next
+            </button>
           </div>
         </div>
         <div className={classes.info2}>

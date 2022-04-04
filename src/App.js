@@ -98,7 +98,7 @@ function App() {
     } else if (option2) {
       changeOption1();
     } else if (option3) {
-      changeOption2();;
+      changeOption2();
     } else if (option4) {
       changeOption3();
     } else if (option5) {
