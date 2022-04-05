@@ -35,6 +35,16 @@ function DefaultWelcome(props) {
               alt="mainPic1"
             />
           </div>
+          <div className={classes.carouselNav}>
+            <div
+              className={`${classes.carousel} ${classes.carouselSelect}`}
+            ></div>
+            <div className={classes.carousel}></div>
+            <div className={classes.carousel}></div>
+            <div className={classes.carousel}></div>
+            <div className={classes.carousel}></div>
+            <div className={classes.carousel}></div>
+          </div>
           <div className={classes.buttonContainer}>
             <button className={classes.previousButton} onClick={props.previous}>
               <ArrowBackIcon /> Previous
