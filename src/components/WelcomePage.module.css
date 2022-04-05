@@ -398,9 +398,6 @@
 @keyframes newPage {
   0% {
     opacity: 0;
-  }
-  40% {
-    opacity: 0;
     transform: translateX(1%);
   }
   100% {
