@@ -52,7 +52,7 @@
 .mainPicture {
   align-self: center;
   width: 83.5%;
-  height: 60%;
+  height: 70%;
   margin: 0% 5% 4% 0%;
   animation: pictureEntry var(--animation-time-3) ease-in;
 }
