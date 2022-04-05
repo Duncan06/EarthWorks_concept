@@ -14,12 +14,12 @@ function DefaultWelcome(props) {
       <div className={classes.main}>
         <div className={classes.info}>
           <h1 className={classes.textTitle}>J.C. EarthWorks</h1>
-          <div
-            className={`${classes.defaultHome} ${
-              props.notHome ? "" : classes.defaultSelection
-            }`}
-          >
-            <div className={classes.scrollSection}>
+          <div className={classes.scrollSection}>
+            <div
+              className={`${classes.defaultHome} ${
+                props.notHome ? "" : classes.defaultSelection
+              }`}
+            >
               <div className={classes.introHeader}>
                 We'd be happy to help with your next project.
               </div>
