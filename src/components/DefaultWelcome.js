@@ -1,9 +1,5 @@
 import classes from "./WelcomePage.module.css";
-import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
-import SunnyIcon from "@material-ui/icons/WbSunny";
-import MenuBookIcon from "@material-ui/icons/MenuBook";
-import LocalShippingIcon from "@material-ui/icons/Landscape";
-import GridOnIcon from "@material-ui/icons/GridOn";
+import MainInfo2 from "./MainInfo2";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
@@ -73,44 +69,13 @@ function DefaultWelcome(props) {
             </button>
           </div>
         </div>
-        <div className={classes.info2}>
-          <h1 className={classes.info2Title}>Specializations</h1>
-          <button
-            className={classes.optionOneHome}
-            onClick={props.changeOption1}
-          >
-            <h2>Foundation leveling</h2>
-            <LocalShippingIcon className={classes.optionOneIcon} />
-          </button>
-          <button
-            className={classes.optionTwoHome}
-            onClick={props.changeOption2}
-          >
-            <h2>Irrigation</h2>
-            <SunnyIcon className={classes.optionTwoIcon} />
-          </button>
-          <button
-            className={classes.optionThreeHome}
-            onClick={props.changeOption3}
-          >
-            <h2>Site Anaylsis</h2>
-            <GridOnIcon className={classes.optionTwoIcon} />
-          </button>
-          <button
-            className={classes.optionFourHome}
-            onClick={props.changeOption4}
-          >
-            <h2>Consulting</h2>
-            <VerifiedUserIcon className={classes.optionTwoIcon} />
-          </button>
-          <button
-            className={classes.optionFiveHome}
-            onClick={props.changeOption5}
-          >
-            <h2>Code Compliance</h2>
-            <MenuBookIcon className={classes.optionOneIcon} />
-          </button>
-        </div>
+        <MainInfo2 
+          changeOption1={props.changeOption1}
+          changeOption2={props.changeOption2}
+          changeOption3={props.changeOption3}
+          changeOption4={props.changeOption4}
+          changeOption5={props.changeOption5}
+        />
       </div>
     </div>
   );
