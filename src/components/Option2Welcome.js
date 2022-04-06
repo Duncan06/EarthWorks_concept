@@ -13,7 +13,7 @@ function Option2(props) {
       <div className={classes.welcome}>Welcome!</div>
       <div className={classes.main}>
         <div className={classes.info}>
-          <h1 className={classes.textTitle}>J.C. EarthWorks</h1>
+          <h1 className={classes.textTitle}>J.C. EarthWorks LLC</h1>
           <div className={classes.scrollSection}>
             <div className={classes.newSelection2}>
               <div className={classes.introHeader}>Irrigation</div>

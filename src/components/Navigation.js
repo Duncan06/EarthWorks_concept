@@ -7,7 +7,7 @@ import WorkIcon from "@material-ui/icons/Work";
 function Navigation(props) {
   return (
     <header className={nav.navMain}>
-      <div className={nav.logo}>J.C. EarthWorks</div>
+      <div className={nav.logo}>J.C. EarthWorks LLC</div>
       <button className={nav.navButton} onClick={props.changeHome}>
         <HomeIcon />
         Home

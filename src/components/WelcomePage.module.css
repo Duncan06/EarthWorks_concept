@@ -134,6 +134,8 @@
   width: 86.5%;
   height: 100%;
   overflow: scroll;
+  animation: fadeInButtons var(--animation-time-4)
+    cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .defaultSelection {
