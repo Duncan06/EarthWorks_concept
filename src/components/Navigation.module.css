@@ -32,6 +32,11 @@
   background: linear-gradient(135deg, #21352a 30%, #138dff);
 }
 
+.navButton:active {
+  color: white;
+  background: linear-gradient(135deg, #0d1410 30%, #0d63b3);
+}
+
 @media (max-width: 1000px) {
   .logo {
     flex: 1 0.2 auto;

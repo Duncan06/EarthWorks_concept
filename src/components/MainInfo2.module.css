@@ -54,6 +54,11 @@
   color: white;
 }
 
+.optionOneHome:active {
+  background: -webkit-linear-gradient(30deg, #302100, rgb(161, 148, 74));
+  color: white;
+}
+
 .optionOneIcon {
   margin-top: 30%;
   font-size: 500% !important;
@@ -73,12 +78,22 @@
   color: white;
 }
 
+.optionTwoHome:active {
+  background: -webkit-linear-gradient(30deg, #086666, rgb(10, 168, 168));
+  color: white;
+}
+
 .optionThreeHome {
   background: -webkit-linear-gradient(30deg, #2affa6, rgb(141, 236, 63));
 }
 
 .optionThreeHome:hover {
   background: -webkit-linear-gradient(30deg, #1d9b66, rgb(141, 236, 63));
+  color: white;
+}
+
+.optionThreeHome:active {
+  background: -webkit-linear-gradient(30deg, #136945, rgb(92, 155, 40));
   color: white;
 }
 
@@ -91,12 +106,22 @@
   color: white;
 }
 
+.optionFourHome:active {
+  background: -webkit-linear-gradient(#7a7a7a, rgb(7, 18, 36));
+  color: white;
+}
+
 .optionFiveHome {
   background: -webkit-linear-gradient(#ff782a, rgb(236, 63, 63));
 }
 
 .optionFiveHome:hover {
   background: -webkit-linear-gradient(#88431b, rgb(165, 26, 26));
+  color: white;
+}
+
+.optionFiveHome:active {
+  background: -webkit-linear-gradient(#5f2f13, rgb(105, 16, 16));
   color: white;
 }
 

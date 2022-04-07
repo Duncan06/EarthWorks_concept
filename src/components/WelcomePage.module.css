@@ -87,6 +87,11 @@
   color: white;
 }
 
+.previousButton:active {
+  background: -webkit-linear-gradient(#1c7272, rgb(36, 80, 145));
+  color: white;
+}
+
 .nextButton {
   border: none;
   display: flex;
@@ -104,6 +109,11 @@
 
 .nextButton:hover {
   background: -webkit-linear-gradient(#27a1a1, rgb(63, 132, 236));
+  color: white;
+}
+
+.nextButton:active {
+  background: -webkit-linear-gradient(#1c7272, rgb(36, 80, 145));
   color: white;
 }
 
