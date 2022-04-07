@@ -1,8 +1,8 @@
-import Option1 from "./Option1Welcome";
-import Option2 from "./Option2Welcome";
-import Option3 from "./Option3Welcome";
-import Option4 from "./Option4Welcome";
-import Option5 from "./Option5Welcome";
+import Option1 from "./specializations/Option1Welcome";
+import Option2 from "./specializations/Option2Welcome";
+import Option3 from "./specializations/Option3Welcome";
+import Option4 from "./specializations/Option4Welcome";
+import Option5 from "./specializations/Option5Welcome";
 import DefaultWelcome from "./DefaultWelcome";
 
 function Welcome(props) {

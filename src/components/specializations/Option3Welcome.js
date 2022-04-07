@@ -1,5 +1,5 @@
-import classes from "./WelcomePage.module.css";
-import MainInfo2 from "./MainInfo2";
+import classes from "../WelcomePage.module.css";
+import MainInfo2 from "../MainInfo2";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
