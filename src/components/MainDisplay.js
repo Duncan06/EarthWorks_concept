@@ -1,8 +1,8 @@
 import classes from "./MainDisplay.module.css";
-import WelcomePage from "./WelcomePage";
-import AboutPage from "./AboutPage";
-import PricePage from "./PricePage";
-import ContactPage from "./ContactPage";
+import WelcomePage from "./PageOptions/WelcomePage";
+import AboutPage from "./PageOptions/AboutPage";
+import PricePage from "./PageOptions/PricePage";
+import ContactPage from "./PageOptions/ContactPage";
 
 function MainDisplay(props) {
   function CurrentInformation() {
