@@ -32,7 +32,7 @@ function MainDisplay(props) {
       return <ContactPage />;
     }
   }
-  return <div>{CurrentInformation()}</div>;
+  return <div className={classes}>{CurrentInformation()}</div>;
 }
 
 export default MainDisplay;
