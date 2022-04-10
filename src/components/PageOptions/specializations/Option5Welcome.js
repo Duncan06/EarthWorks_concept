@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import classes from "../WelcomePage.module.css";
-import MainInfo2 from "../MainInfo2";
 
+const MainInfo2 = React.lazy(() => import("../MainInfo2"));
 const Carousel = React.lazy(() => import("../Carousel"));
 const PrevNextButtons = React.lazy(() => import("../PrevNextButtons"));
 
@@ -38,13 +38,15 @@ function Option5(props) {
             <PrevNextButtons previous={props.previous} next={props.next} />
           </Suspense>
         </div>
-        <MainInfo2
-          changeOption1={props.changeOption1}
-          changeOption2={props.changeOption2}
-          changeOption3={props.changeOption3}
-          changeOption4={props.changeOption4}
-          changeOption5={props.changeOption5}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <MainInfo2
+            changeOption1={props.changeOption1}
+            changeOption2={props.changeOption2}
+            changeOption3={props.changeOption3}
+            changeOption4={props.changeOption4}
+            changeOption5={props.changeOption5}
+          />
+        </Suspense>
       </div>
     </div>
   );
