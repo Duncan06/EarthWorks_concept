@@ -1,7 +1,9 @@
+import React, { Suspense } from "react";
 import classes from "../WelcomePage.module.css";
 import MainInfo2 from "../MainInfo2";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+
+const Carousel = React.lazy(() => import("../Carousel"));
+const PrevNextButtons = React.lazy(() => import("../PrevNextButtons"));
 
 function Option5(props) {
   return (
@@ -23,24 +25,18 @@ function Option5(props) {
               />
             </div>
           </div>
-          <div className={classes.carouselNav}>
-            <div className={classes.carousel}></div>
-            <div className={classes.carousel}></div>
-            <div className={classes.carousel}></div>
-            <div className={classes.carousel}></div>
-            <div className={classes.carousel}></div>
-            <div
-              className={`${classes.carousel} ${classes.carouselSelect}`}
-            ></div>
-          </div>
-          <div className={classes.buttonContainer}>
-            <button className={classes.previousButton} onClick={props.previous}>
-              <ArrowBackIcon /> Previous
-            </button>
-            <button className={classes.nextButton} onClick={props.next}>
-              Next <ArrowForwardIcon />
-            </button>
-          </div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Carousel
+              option1={props.option1}
+              option2={props.option2}
+              option3={props.option3}
+              option4={props.option4}
+              option5={props.option5}
+            />
+          </Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+            <PrevNextButtons previous={props.previous} next={props.next} />
+          </Suspense>
         </div>
         <MainInfo2
           changeOption1={props.changeOption1}
