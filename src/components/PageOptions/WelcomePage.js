@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense } from "react";
 
 const Option1 = React.lazy(() => import("./specializations/Option1Welcome"));
 const Option2 = React.lazy(() => import("./specializations/Option2Welcome"));

@@ -3,6 +3,8 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import MainDisplay from "./components/MainDisplay";
 import Footer from "./components/Footer";
+import "typeface-cormorant-sc";
+import "typeface-roboto";
 
 function App() {
   const [home, setHome] = useState(true);
