@@ -10,46 +10,36 @@ function MainDisplay(props) {
   function CurrentInformation() {
     if (props.home) {
       return (
-        <Suspense fallback={<div>Loading...</div>}>
-          <WelcomePage
-            home={props.home}
-            notHome={props.notHome}
-            option1={props.option1}
-            changeOption1={props.changeOption1}
-            option2={props.option2}
-            changeOption2={props.changeOption2}
-            option3={props.option3}
-            changeOption3={props.changeOption3}
-            option4={props.option4}
-            changeOption4={props.changeOption4}
-            option5={props.option5}
-            changeOption5={props.changeOption5}
-            next={props.next}
-            previous={props.previous}
-          />
-        </Suspense>
+        <WelcomePage
+          home={props.home}
+          notHome={props.notHome}
+          option1={props.option1}
+          changeOption1={props.changeOption1}
+          option2={props.option2}
+          changeOption2={props.changeOption2}
+          option3={props.option3}
+          changeOption3={props.changeOption3}
+          option4={props.option4}
+          changeOption4={props.changeOption4}
+          option5={props.option5}
+          changeOption5={props.changeOption5}
+          next={props.next}
+          previous={props.previous}
+        />
       );
     } else if (props.about) {
-      return (
-        <Suspense fallback={<div>Loading...</div>}>
-          <AboutPage />
-        </Suspense>
-      );
+      return <AboutPage />;
     } else if (props.price) {
-      return (
-        <Suspense fallback={<div>Loading...</div>}>
-          <PricePage />
-        </Suspense>
-      );
+      return <PricePage />;
     } else {
-      return (
-        <Suspense fallback={<div>Loading...</div>}>
-          <ContactPage />
-        </Suspense>
-      );
+      return <ContactPage />;
     }
   }
-  return <div className={classes}>{CurrentInformation()}</div>;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      {CurrentInformation()}
+    </Suspense>
+  );
 }
 
 export default MainDisplay;
