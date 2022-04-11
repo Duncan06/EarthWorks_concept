@@ -12,6 +12,7 @@ function MainDisplay(props) {
       return (
         <Suspense fallback={<div>Loading...</div>}>
           <WelcomePage
+            home={props.home}
             notHome={props.notHome}
             option1={props.option1}
             changeOption1={props.changeOption1}
