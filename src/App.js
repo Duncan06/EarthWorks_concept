@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+// Lazy load of components seems to slow down mobile performance.
 import Navigation from "./components/Navigation";
 import MainDisplay from "./components/MainDisplay";
 import Footer from "./components/Footer";
