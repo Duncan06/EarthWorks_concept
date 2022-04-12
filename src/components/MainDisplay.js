@@ -13,6 +13,9 @@ function MainDisplay(props) {
         <WelcomePage
           home={props.home}
           notHome={props.notHome}
+          nowSetHome={props.nowSetHome}
+          applyNotHomeOption={props.applyNotHomeOption}
+          notFirstHome={props.notFirstHome}
           option1={props.option1}
           changeOption1={props.changeOption1}
           option2={props.option2}
@@ -36,9 +39,7 @@ function MainDisplay(props) {
     }
   }
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      {CurrentInformation()}
-    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>{CurrentInformation()}</Suspense>
   );
 }
 

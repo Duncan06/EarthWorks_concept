@@ -15,90 +15,15 @@ function App() {
   const [firstTimeAbout, setFirstTimeAbout] = useState(true);
   const [firstTimePrice, setFirstTimePrice] = useState(true);
   const [firstTimeContact, setFirstTimeContact] = useState(true);
-  const [option1, setOption1] = useState(false);
-  const [option2, setOption2] = useState(false);
-  const [option3, setOption3] = useState(false);
-  const [option4, setOption4] = useState(false);
-  const [option5, setOption5] = useState(false);
   const [notHome, setNotHome] = useState(false);
 
   const setPages = [setHome, setAbout, setPrice, setContact];
-  const setOptions = [
-    setOption1,
-    setOption2,
-    setOption3,
-    setOption4,
-    setOption5,
-  ];
 
   function nowSetHome() {
     setHome(true);
     // Set remaining values to false (This is repeated in multiple lines).
-    setOptions.filter((name) => name !== setHome).map((func) => func(false));
-    setOptions.map((func) => func(false));
+    setPages.filter((name) => name !== setHome).map((func) => func(false));
     notFirstHome();
-  }
-
-  function changeOption1() {
-    setOption1(true);
-    setOptions.filter((name) => name !== setOption1).map((func) => func(false));
-    notFirstHome();
-  }
-
-  function changeOption2() {
-    setOption2(true);
-    setOptions.filter((name) => name !== setOption2).map((func) => func(false));
-    notFirstHome();
-  }
-
-  function changeOption3() {
-    setOption3(true);
-    setOptions.filter((name) => name !== setOption3).map((func) => func(false));
-    notFirstHome();
-  }
-
-  function changeOption4() {
-    setOption4(true);
-    setOptions.filter((name) => name !== setOption4).map((func) => func(false));
-    notFirstHome();
-  }
-
-  function changeOption5() {
-    setOption5(true);
-    setOptions.filter((name) => name !== setOption5).map((func) => func(false));
-    notFirstHome();
-  }
-
-  function next() {
-    if (option1) {
-      changeOption2();
-    } else if (option2) {
-      changeOption3();
-    } else if (option3) {
-      changeOption4();
-    } else if (option4) {
-      changeOption5();
-    } else if (option5) {
-      nowSetHome();
-    } else {
-      changeOption1();
-    }
-  }
-
-  function previous() {
-    if (option1) {
-      nowSetHome();
-    } else if (option2) {
-      changeOption1();
-    } else if (option3) {
-      changeOption2();
-    } else if (option4) {
-      changeOption3();
-    } else if (option5) {
-      changeOption4();
-    } else {
-      changeOption5();
-    }
   }
 
   function nowSetAbout() {
@@ -185,22 +110,13 @@ function App() {
       />
       <MainDisplay
         home={home}
-        notHome={notHome}
         about={about}
         price={price}
         contact={contact}
-        option1={option1}
-        changeOption1={changeOption1}
-        option2={option2}
-        changeOption2={changeOption2}
-        option3={option3}
-        changeOption3={changeOption3}
-        option4={option4}
-        changeOption4={changeOption4}
-        option5={option5}
-        changeOption5={changeOption5}
-        next={next}
-        previous={previous}
+        notHome={notHome}
+        nowSetHome={nowSetHome}
+        notFirstHome={notFirstHome}
+        applyNotHomeOption={() => setNotHome(false)}
       />
       <Footer />
     </div>
