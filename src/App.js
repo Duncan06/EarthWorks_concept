@@ -33,8 +33,7 @@ function App() {
 
   function nowSetHome() {
     setHome(true);
-    const otherPages = setPages.splice(1, 3);
-    otherPages.map((func) => func(false));
+    setPages.splice(1, 3).map((func) => func(false));
     setOptions.map((func) => func(false));
     notFirstHome();
   }
