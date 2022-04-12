@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import classes from "./MainDisplay.module.css";
+import "./MainDisplay.module.css";
 
 const WelcomePage = React.lazy(() => import("./pageOptions/WelcomePage"));
 const AboutPage = React.lazy(() => import("./pageOptions/AboutPage"));
