@@ -22,66 +22,51 @@ function App() {
   const [option5, setOption5] = useState(false);
   const [notHome, setNotHome] = useState(false);
 
+  const setPages = [setHome, setAbout, setPrice, setContact];
+  const setOptions = [
+    setOption1,
+    setOption2,
+    setOption3,
+    setOption4,
+    setOption5,
+  ];
+
   function nowSetHome() {
     setHome(true);
-    setAbout(false);
-    setPrice(false);
-    setContact(false);
-    setOption1(false);
-    setOption2(false);
-    setOption3(false);
-    setOption4(false);
-    setOption5(false);
+    const otherPages = setPages.splice(1, 3);
+    otherPages.map((func) => func(false));
+    setOptions.map((func) => func(false));
     notFirstHome();
   }
 
   function changeOption1() {
     setOption1(true);
-    setOption2(false);
-    setOption3(false);
-    setOption4(false);
-    setOption5(false);
-    setNotHome(false);
+    // Set remaining values to false (This is repeated in multiple lines).
+    setOptions.filter((name) => name !== setOption1).map((func) => func(false));
     notFirstHome();
   }
 
   function changeOption2() {
-    setOption1(false);
     setOption2(true);
-    setOption3(false);
-    setOption4(false);
-    setOption5(false);
-    setNotHome(false);
+    setOptions.filter((name) => name !== setOption2).map((func) => func(false));
     notFirstHome();
   }
 
   function changeOption3() {
-    setOption1(false);
-    setOption2(false);
     setOption3(true);
-    setOption4(false);
-    setOption5(false);
-    setNotHome(false);
+    setOptions.filter((name) => name !== setOption3).map((func) => func(false));
     notFirstHome();
   }
 
   function changeOption4() {
-    setOption1(false);
-    setOption2(false);
-    setOption3(false);
     setOption4(true);
-    setOption5(false);
-    setNotHome(false);
+    setOptions.filter((name) => name !== setOption4).map((func) => func(false));
     notFirstHome();
   }
 
   function changeOption5() {
-    setOption1(false);
-    setOption2(false);
-    setOption3(false);
-    setOption4(false);
     setOption5(true);
-    setNotHome(false);
+    setOptions.filter((name) => name !== setOption5).map((func) => func(false));
     notFirstHome();
   }
 
@@ -118,11 +103,9 @@ function App() {
   }
 
   function nowSetAbout() {
-    setHome(false);
     setAbout(true);
-    setPrice(false);
-    setContact(false);
     setNotHome(true);
+    setPages.filter((name) => name !== setAbout).map((func) => func(false));
     if (firstTimeAbout) {
       setFirstTimeAbout(false);
     } else {
@@ -131,11 +114,9 @@ function App() {
   }
 
   function nowSetPrice() {
-    setHome(false);
-    setAbout(false);
     setPrice(true);
-    setContact(false);
     setNotHome(true);
+    setPages.filter((name) => name !== setPrice).map((func) => func(false));
     if (firstTimePrice) {
       setFirstTimePrice(false);
     } else {
@@ -144,11 +125,9 @@ function App() {
   }
 
   function nowSetContact() {
-    setHome(false);
-    setAbout(false);
-    setPrice(false);
     setContact(true);
     setNotHome(true);
+    setPages.filter((name) => name !== setContact).map((func) => func(false));
     if (firstTimeContact) {
       setFirstTimeContact(false);
     } else {
