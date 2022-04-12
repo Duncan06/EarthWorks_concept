@@ -135,24 +135,40 @@ function App() {
     }
   }
 
+  // Stop animations
   function notFirstHome() {
-    document.documentElement.style.setProperty("--animation-time-1", 0);
-    document.documentElement.style.setProperty("--animation-time-2", 0);
-    document.documentElement.style.setProperty("--animation-time-3", 0);
-    document.documentElement.style.setProperty("--animation-time-4", 0);
+    const animationList = [
+      "--animation-time-1",
+      "--animation-time-2",
+      "--animation-time-3",
+      "--animation-time-4",
+    ];
+    animationList.map((item) =>
+      document.documentElement.style.setProperty(item, 0)
+    );
   }
 
   function notFirstAbout() {
-    document.documentElement.style.setProperty("--animation-time-5", 0);
-    document.documentElement.style.setProperty("--animation-time-6", 0);
-    document.documentElement.style.setProperty("--animation-time-7", 0);
+    const animationList = [
+      "--animation-time-5",
+      "--animation-time-6",
+      "--animation-time-7",
+    ];
+    animationList.map((item) =>
+      document.documentElement.style.setProperty(item, 0)
+    );
   }
 
   function notFirstPrice() {
-    document.documentElement.style.setProperty("--animation-time-8", 0);
-    document.documentElement.style.setProperty("--animation-time-9", 0);
-    document.documentElement.style.setProperty("--animation-time-10", 0);
-    document.documentElement.style.setProperty("--animation-time-11", 0);
+    const animationList = [
+      "--animation-time-8",
+      "--animation-time-9",
+      "--animation-time-10",
+      "--animation-time-11",
+    ];
+    animationList.map((item) =>
+      document.documentElement.style.setProperty(item, 0)
+    );
   }
 
   function notFirstContact() {
