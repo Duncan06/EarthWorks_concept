@@ -33,14 +33,14 @@ function App() {
 
   function nowSetHome() {
     setHome(true);
-    setPages.splice(1, 3).map((func) => func(false));
+    // Set remaining values to false (This is repeated in multiple lines).
+    setOptions.filter((name) => name !== setHome).map((func) => func(false));
     setOptions.map((func) => func(false));
     notFirstHome();
   }
 
   function changeOption1() {
     setOption1(true);
-    // Set remaining values to false (This is repeated in multiple lines).
     setOptions.filter((name) => name !== setOption1).map((func) => func(false));
     notFirstHome();
   }
