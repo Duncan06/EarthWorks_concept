@@ -99,7 +99,6 @@ function Welcome(props) {
           <h1 className={classes.textTitle}>J.C. EarthWorks LLC</h1>
           <Suspense fallback={<div>Loading...</div>}>
             <SubjectSection
-              home={props.home}
               notHome={props.notHome}
               option1={option1}
               option2={option2}
