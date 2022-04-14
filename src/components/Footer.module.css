@@ -13,8 +13,3 @@
   margin-right: 1%;
 }
 
-@media(max-width: 1000px) {
-  .footerMain {
-    height: 1rem;
-  }
-}
