@@ -4,7 +4,7 @@
   background: linear-gradient(#999999, #464646);
 }
 
-.logo {
+.logo, .logoExpand {
   display: flex;
   flex: 3 1 auto;
   justify-content: center;
@@ -37,13 +37,40 @@
   background: linear-gradient(135deg, #0d1410 30%, #0d63b3);
 }
 
+.collapsedMenu {
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 5%;
+  justify-content: flex-end;
+  background: none;
+  border: none;
+  flex: 2;
+  height: auto;
+  padding: 0%;
+  overflow: unset;
+}
+
+.showOptions {
+  transition: expandOut;
+}
+
 @media (max-width: 1000px) {
-  .logo {
+  .logo, .logoExpand {
     flex: 1 0.2 auto;
     height: 4rem;
     font-size: large;
   }
   .navButton {
     flex: 1 0.5 auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .logo {
+    margin-left: 5%;
+  }
+  .navButton {
+    width: 100%;
   }
 }
