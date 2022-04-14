@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import "./MainDisplay.module.css";
 
-const WelcomePage = React.lazy(() => import("./pageOptions/WelcomePage"));
+const WelcomePage = React.lazy(() => import("./pageOptions/welcome/WelcomePage"));
 const AboutPage = React.lazy(() => import("./pageOptions/AboutPage"));
 const PricePage = React.lazy(() => import("./pageOptions/PricePage"));
 const ContactPage = React.lazy(() => import("./pageOptions/ContactPage"));
