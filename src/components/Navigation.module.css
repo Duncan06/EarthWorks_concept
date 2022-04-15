@@ -47,7 +47,10 @@
 }
 
 .showOptions {
-  transition: expandOut;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: scrollIn 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media (max-width: 1000px) {
@@ -68,5 +71,16 @@
   }
   .navButton {
     width: 100%;
+  }
+}
+
+@keyframes scrollIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
