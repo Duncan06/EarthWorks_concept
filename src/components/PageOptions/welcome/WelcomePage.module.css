@@ -66,7 +66,8 @@
     cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-.previousButton, .nextButton {
+.previousButton,
+.nextButton {
   border: none;
   display: flex;
   justify-content: center;
@@ -82,12 +83,14 @@
   margin-left: -20%;
 }
 
-.previousButton:hover, .nextButton:hover {
+.previousButton:hover,
+.nextButton:hover {
   background: -webkit-linear-gradient(#27a1a1, rgb(63, 132, 236));
   color: white;
 }
 
-.previousButton:active, .nextButton:active {
+.previousButton:active,
+.nextButton:active {
   background: -webkit-linear-gradient(#1c7272, rgb(36, 80, 145));
   color: white;
 }
@@ -140,7 +143,11 @@
   height: 100%;
 }
 
-.newSelection, .newSelection2, .newSelection3, .newSelection4, .newSelection5 {
+.newSelection,
+.newSelection2,
+.newSelection3,
+.newSelection4,
+.newSelection5 {
   width: 100%;
   height: 100%;
   animation: newPage 2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -169,6 +176,7 @@
     margin: 0% 0% 0% 5.5%;
     width: 100%;
   }
+  
   .contactPic {
     width: 29%;
   }
@@ -184,8 +192,36 @@
   .welcome {
     font-size: 50px;
   }
+
   .info {
     margin: -10% 0% 0% 5%;
+    padding: 0%;
+  }
+
+  .carouselNav {
+    gap: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .textTitle {
+    max-height: 100px;
+  }
+
+  .info {
+    max-height: 600px;
+  }
+
+  .info > * {
+    min-height: 100px;
+  }
+
+  .previousButton, .nextButton {
+    max-height: 80px;
+  }
+
+  .previousButton > *, .nextButton > * {
+    margin: 0%;
   }
 }
 
