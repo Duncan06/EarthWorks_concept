@@ -145,7 +145,40 @@
 
 @media (max-width: 480px) {
   .info2 {
-    animation: fadeIn 6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeIn 4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  
+  .info2 > button {
+    margin: 2%;
+    height: 20%;
+    width: 40%;
+    font-size: small;
+  }
+
+  .optionOneIcon {
+    margin-top: 0%;
+    font-size: 200% !important;
+  }
+
+  .optionTwoIcon {
+    margin-top: 0%;
+    font-size: 200% !important;
+  }
+
+  .info2 > button:nth-child(2n) {
+    grid-column: 2;
+  }
+  
+  .info2 > button:nth-child(3n) {
+    grid-column: 3;
+  }
+  
+  .info2 > button:nth-child(4n) {
+    grid-column: 4;
   }
 }
 
