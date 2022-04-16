@@ -125,7 +125,7 @@
   color: white;
 }
 
-@media (max-width: 1520px) {
+@media (max-width: 1650px) {
   .info2 {
     width: 90%;
     height: 700px;
@@ -148,7 +148,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: fadeIn 4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 
   /* Force the first button on to second row. */
@@ -157,7 +156,6 @@
     padding-right: 18%;
   }
 
-  
   .info2 > button {
     margin: 2%;
     height: 20%;
@@ -178,11 +176,11 @@
   .info2 > button:nth-child(2n) {
     grid-column: 2;
   }
-  
+
   .info2 > button:nth-child(3n) {
     grid-column: 3;
   }
-  
+
   .info2 > button:nth-child(4n) {
     grid-column: 4;
   }
@@ -199,17 +197,5 @@
   100% {
     opacity: 1;
     transform: translateX(0%);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
