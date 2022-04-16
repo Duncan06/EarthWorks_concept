@@ -10,26 +10,22 @@ import WorkIcon from "@material-ui/icons/Work";
 
 function Navigation(props) {
   const { width } = useWindowDimensions();
-  const [showing, setShowing] = useState(false);
+  const [showing, setShowing] = useState(true);
   const mobileWidth = 750;
 
   function toggleMenu() {
     setShowing(!showing);
     const current = document.documentElement.style;
-    if (current.getPropertyValue("--visible") === "0") {
+    if (
+      current.getPropertyValue("--visible") === "0" ||
+      current.getPropertyValue("--visible") === ""
+    ) {
+      console.log("came here");
       current.setProperty("--visible", "1");
       current.setProperty("--height", "300px");
     } else {
       current.setProperty("--visible", "0");
       current.setProperty("--height", "10px");
-    }
-  }
-
-  function currentButton() {
-    if (showing) {
-      return <CloseIcon />;
-    } else {
-      return <MenuIcon />;
     }
   }
 
@@ -63,7 +59,7 @@ function Navigation(props) {
             <div className={nav.logo}>
               J.C. EarthWorks LLC
               <button className={nav.collapsedMenu} onClick={toggleMenu}>
-                {currentButton()} Menu
+                {showing ? <MenuIcon /> : <CloseIcon />} Menu
               </button>
             </div>
           </header>
