@@ -24,9 +24,22 @@ function Navigation(props) {
     ) {
       current.setProperty("--visible", "1");
       current.setProperty("--height", "300px");
+      if (width > 400) {
+        current.setProperty("--delay", "0.7s");
+      }
+      else {
+        current.setProperty("--delay", "0.3s");
+      }
+      
     } else {
       current.setProperty("--visible", "0");
       current.setProperty("--height", "10px");
+      if (width > 400) {
+        current.setProperty("--delay", "0.8s");
+      }
+      else {
+        current.setProperty("--delay", "0.6s");
+      }
     }
   }
 
