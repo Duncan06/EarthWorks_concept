@@ -43,6 +43,10 @@
   background: linear-gradient(135deg, #0d1410 30%, #0d63b3);
 }
 
+.navButton:disabled {
+  cursor: default;
+}
+
 .collapsedMenu {
   color: white;
   display: flex;

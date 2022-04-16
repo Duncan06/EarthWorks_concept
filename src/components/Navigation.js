@@ -10,11 +10,13 @@ import WorkIcon from "@material-ui/icons/Work";
 
 function Navigation(props) {
   const { width } = useWindowDimensions();
-  const [showing, setShowing] = useState(true);
+  const [showing, setShowing] = useState(false);
+  const [hidden, setHidden] = useState(true);
   const mobileWidth = 750;
 
   function toggleMenu() {
     setShowing(!showing);
+    setHidden(!hidden);
     const current = document.documentElement.style;
     if (
       current.getPropertyValue("--visible") === "0" ||
@@ -58,24 +60,40 @@ function Navigation(props) {
             <div className={nav.logo}>
               J.C. EarthWorks LLC
               <button className={nav.collapsedMenu} onClick={toggleMenu}>
-                {showing ? <MenuIcon /> : <CloseIcon />} Menu
+                {showing ? <CloseIcon /> : <MenuIcon />} Menu
               </button>
             </div>
           </header>
           <div className={nav.showOptions}>
-            <button className={nav.navButton} onClick={props.changeHome}>
+            <button
+              className={nav.navButton}
+              onClick={props.changeHome}
+              disabled={hidden}
+            >
               <HomeIcon />
               Home
             </button>
-            <button className={nav.navButton} onClick={props.changeAbout}>
+            <button
+              className={nav.navButton}
+              onClick={props.changeAbout}
+              disabled={hidden}
+            >
               <DescriptionIcon />
               About us
             </button>
-            <button className={nav.navButton} onClick={props.changePrice}>
+            <button
+              className={nav.navButton}
+              onClick={props.changePrice}
+              disabled={hidden}
+            >
               <PaymentsIcon />
               Pricing/Estimates
             </button>
-            <button className={nav.navButton} onClick={props.changeContact}>
+            <button
+              className={nav.navButton}
+              onClick={props.changeContact}
+              disabled={hidden}
+            >
               <WorkIcon />
               Contact For Hire
             </button>
