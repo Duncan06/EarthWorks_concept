@@ -20,7 +20,6 @@ function Navigation(props) {
       current.getPropertyValue("--visible") === "0" ||
       current.getPropertyValue("--visible") === ""
     ) {
-      console.log("came here");
       current.setProperty("--visible", "1");
       current.setProperty("--height", "300px");
     } else {
