@@ -67,6 +67,19 @@
   .mainAbout {
     height: fit-content;
     overflow: visible;
+    margin-bottom: 5%;
+  }
+
+  .mainAbout2 {
+    margin-bottom: 5%;
+  }
+
+  .mainAbout2 > * {
+    margin-bottom: 5%;
+  }
+
+  .mainAbout3 > * {
+    margin-bottom: 5%;
   }
 }
 
