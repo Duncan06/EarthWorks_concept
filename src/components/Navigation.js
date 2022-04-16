@@ -1,6 +1,8 @@
+import { useState } from "react";
 import nav from "./Navigation.module.css";
 import useWindowDimensions from "./useWindowDimensions";
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 import HomeIcon from "@material-ui/icons/Home";
 import DescriptionIcon from "@material-ui/icons/Description";
 import PaymentsIcon from "@material-ui/icons/Payment";
@@ -8,9 +10,11 @@ import WorkIcon from "@material-ui/icons/Work";
 
 function Navigation(props) {
   const { width } = useWindowDimensions();
+  const [showing, setShowing] = useState(false);
   const mobileWidth = 750;
 
   function toggleMenu() {
+    setShowing(!showing);
     const current = document.documentElement.style;
     if (current.getPropertyValue("--visible") === "0") {
       current.setProperty("--visible", "1");
@@ -18,6 +22,14 @@ function Navigation(props) {
     } else {
       current.setProperty("--visible", "0");
       current.setProperty("--height", "10px");
+    }
+  }
+
+  function currentButton() {
+    if (showing) {
+      return <CloseIcon />;
+    } else {
+      return <MenuIcon />;
     }
   }
 
@@ -49,9 +61,9 @@ function Navigation(props) {
         <div>
           <header className={nav.navMain}>
             <div className={nav.logo}>
-              J.C. EarthWorks LLC{" "}
+              J.C. EarthWorks LLC
               <button className={nav.collapsedMenu} onClick={toggleMenu}>
-                <MenuIcon /> Menu
+                {currentButton()} Menu
               </button>
             </div>
           </header>
