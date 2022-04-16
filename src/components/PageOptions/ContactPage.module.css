@@ -16,9 +16,9 @@
 }
 
 .innerTitle {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
 
 .emailPhoneInfo {
   display: flex;
@@ -65,6 +65,18 @@
   }
 }
 
+@media (max-width: 480px) {
+  .mainContactContainer {
+    font-size: small;
+    height: fit-content;
+  }
+
+  .contactPic {
+    max-height: 100px;
+    margin-bottom: 5%;
+  }
+}
+
 @keyframes fadeIn4 {
   0% {
     opacity: 0;
@@ -78,10 +90,10 @@
 }
 
 @keyframes slideDown2 {
-    0% {
-      transform: translateY(-10%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
+  0% {
+    transform: translateY(-10%);
   }
+  100% {
+    transform: translateY(0%);
+  }
+}
