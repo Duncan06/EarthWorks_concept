@@ -27,6 +27,10 @@
     cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
+.loadingInfo {
+  height: 600px;
+}
+
 .info > * {
   margin-left: 13.5%;
 }
@@ -186,6 +190,10 @@
   .info {
     margin: -12% 0% 0% 5%;
   }
+
+  .loadingInfo {
+    height: 500px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -200,6 +208,10 @@
 
   .carouselNav {
     gap: 5%;
+  }
+
+  .loadingInfo {
+    height: 350px;
   }
 }
 

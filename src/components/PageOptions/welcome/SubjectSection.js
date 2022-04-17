@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-
+import classes from "./WelcomePage.module.css";
 const DefaultSubject = React.lazy(() =>
   import("./specializations/DefaultSubject")
 );
@@ -26,7 +26,7 @@ function SubjectSection(props) {
     }
   }
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className={classes.loadingInfo}>Loading...</div>}>
       {SubjectSectionSelection()}
     </Suspense>
   );
