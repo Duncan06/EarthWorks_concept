@@ -189,7 +189,7 @@
     align-items: center;
     flex: 0.1;
     margin: -4% 0% 0% 70%;
-    width: 15%;
+    width: fit-content;
     z-index: 2;
   }
 
@@ -321,13 +321,13 @@
   }
 
   .collapsedSelectionMenu {
-    margin: -25% 0% 0% 12%;
+    margin: -20% 0% 0% 12%;
     justify-content: flex-start;
     width: auto;
   }
 
   .selectionMenuOptions {
-    margin-left: 20%;
+    margin: 7% 0% 0% 5%;
   }
 
   .previousButton,
@@ -350,6 +350,15 @@
 
   .carouselNav {
     animation: fadeIn 0s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+}
+
+@media (max-width: 500px) {
+  .collapsedSelectionMenu {
+    margin: -25% 0% 0% 8%;
+  }
+  .selectionMenuOptions {
+    margin: 19% 0% 0% 0%;
   }
 }
 
