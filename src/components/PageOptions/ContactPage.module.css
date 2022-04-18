@@ -69,6 +69,8 @@
   .mainContactContainer {
     font-size: small;
     height: fit-content;
+    width: 95%;
+    margin-left: 2.5%;
   }
 
   .contactPic {

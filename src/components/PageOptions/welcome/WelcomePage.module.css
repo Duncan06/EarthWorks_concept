@@ -222,7 +222,8 @@
 
   .info {
     max-height: 600px;
-    margin-top: -10%;
+    margin: -10% 0% 0% 2.5%;
+    width: 95%;
   }
 
   .info > * {

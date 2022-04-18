@@ -186,6 +186,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .info2 { 
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+
 @keyframes smallInfo {
   0% {
     opacity: 0;
