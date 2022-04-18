@@ -11,35 +11,7 @@ import WorkIcon from "@material-ui/icons/Work";
 function Navigation(props) {
   const { width } = useWindowDimensions();
   const [showing, setShowing] = useState(false);
-  const [hidden, setHidden] = useState(true);
   const mobileWidth = 750;
-  const smallerMobileWidth = 400;
-
-  function toggleMenu() {
-    setShowing(!showing);
-    setHidden(!hidden);
-    const current = document.documentElement.style;
-    if (
-      current.getPropertyValue("--visible") === "0" ||
-      current.getPropertyValue("--visible") === ""
-    ) {
-      current.setProperty("--visible", "1");
-      current.setProperty("--height", "300px");
-      if (width > smallerMobileWidth) {
-        current.setProperty("--delay", "0.7s");
-      } else {
-        current.setProperty("--delay", "0.3s");
-      }
-    } else {
-      current.setProperty("--visible", "0");
-      current.setProperty("--height", "10px");
-      if (width > 400) {
-        current.setProperty("--delay", "0.8s");
-      } else {
-        current.setProperty("--delay", "0.6s");
-      }
-    }
-  }
 
   function NavDisplay() {
     if (width > mobileWidth) {
@@ -70,45 +42,34 @@ function Navigation(props) {
           <header className={nav.navMain}>
             <div className={nav.logo}>
               J.C. EarthWorks LLC
-              <button className={nav.collapsedMenu} onClick={toggleMenu}>
+              <button
+                className={nav.collapsedMenu}
+                onClick={() => setShowing(!showing)}
+              >
                 {showing ? <CloseIcon /> : <MenuIcon />} Menu
               </button>
             </div>
           </header>
-          <div className={nav.showOptions}>
-            <button
-              className={nav.navButton}
-              onClick={props.changeHome}
-              disabled={hidden}
-            >
-              <HomeIcon />
-              Home
-            </button>
-            <button
-              className={nav.navButton}
-              onClick={props.changeAbout}
-              disabled={hidden}
-            >
-              <DescriptionIcon />
-              About us
-            </button>
-            <button
-              className={nav.navButton}
-              onClick={props.changePrice}
-              disabled={hidden}
-            >
-              <PaymentsIcon />
-              Pricing/Estimates
-            </button>
-            <button
-              className={nav.navButton}
-              onClick={props.changeContact}
-              disabled={hidden}
-            >
-              <WorkIcon />
-              Contact For Hire
-            </button>
-          </div>
+          {showing && (
+            <div className={nav.showOptions}>
+              <button className={nav.navButton} onClick={props.changeHome}>
+                <HomeIcon />
+                Home
+              </button>
+              <button className={nav.navButton} onClick={props.changeAbout}>
+                <DescriptionIcon />
+                About us
+              </button>
+              <button className={nav.navButton} onClick={props.changePrice}>
+                <PaymentsIcon />
+                Pricing/Estimates
+              </button>
+              <button className={nav.navButton} onClick={props.changeContact}>
+                <WorkIcon />
+                Contact For Hire
+              </button>
+            </div>
+          )}
         </div>
       );
     }
