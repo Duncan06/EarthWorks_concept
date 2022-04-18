@@ -141,6 +141,8 @@ function Welcome(props) {
         </div>
       );
     } else {
+      // Prevent scroll-in animation for mainInfo2.
+      document.documentElement.style.setProperty("--animation-time-4", "0");
       return (
         <div>
           <div className={classes.welcome}>Welcome!</div>
