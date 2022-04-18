@@ -143,11 +143,13 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1650px) {
   .info2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 200%;
+    width: 60%;
   }
 
   /* Force the first button on to second row. */
@@ -183,13 +185,6 @@
 
   .info2 > button:nth-child(4n) {
     grid-column: 4;
-  }
-}
-
-@media (max-width: 480px) {
-  .info2 { 
-    width: 95%;
-    margin-left: 2.5%;
   }
 }
 

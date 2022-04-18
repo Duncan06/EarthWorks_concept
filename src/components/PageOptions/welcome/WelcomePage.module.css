@@ -38,6 +38,7 @@
 .textTitle {
   font-family: "Cormorant SC", serif;
   text-decoration: underline;
+  z-index: 2;
   background: -webkit-linear-gradient(#2affff, rgb(63, 132, 236));
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -176,6 +177,31 @@
     margin: -8% 0% 0% 5%;
   }
 
+  .info > * {
+    margin-top: 1%;
+  }
+
+  .collapsedSelectionMenu {
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex: 0.1;
+    margin: -4% 0% 0% 70%;
+    width: 15%;
+    z-index: 2;
+  }
+
+  .selectionMenuOptions {
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 53%;
+    width: 500px;
+    animation: selectionMenuAnimation 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
   .pictureContainer {
     margin: 0% 0% 0% 5.5%;
     width: 100%;
@@ -186,6 +212,21 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .collapsedSelectionMenu {
+    margin-top: -4.5%;
+  }
+  .selectionMenuOptions {
+    margin: 2% 0% 0% 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .collapsedSelectionMenu {
+    margin-top: -5.5%;
+  }
+}
+
 @media (max-width: 1000px) {
   .info {
     margin: -12% 0% 0% 5%;
@@ -193,6 +234,26 @@
 
   .loadingInfo {
     height: 500px;
+  }
+
+  .collapsedSelectionMenu {
+    margin-top: -5.5%;
+  }
+  .selectionMenuOptions {
+    margin: 2% 0% 0% 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  .collapsedSelectionMenu {
+    margin-top: -6.5%;
+    width: 25%;
+  }
+}
+
+@media (max-width: 850px) {
+  .collapsedSelectionMenu {
+    margin-top: -7%;
   }
 }
 
@@ -206,6 +267,27 @@
     padding: 0%;
   }
 
+  .info > * {
+    margin-top: 2%;
+  }
+
+  .collapsedSelectionMenu {
+    display: flex;
+    border: none;
+    margin: -8% 0% 0% 70%;
+    width: 25%;
+    z-index: 2;
+  }
+
+  .selectionMenuOptions {
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 40%;
+    width: 500px;
+    animation: selectionMenuAnimation 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
   .carouselNav {
     gap: 5%;
   }
@@ -215,9 +297,17 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 660px) {
+  .collapsedSelectionMenu {
+    margin: -8.5% 0% 0% 70%;
+    width: 25%;
+  }
+}
+
+@media (max-width: 610px) {
   .textTitle {
     max-height: 100px;
+    width: auto;
   }
 
   .info {
@@ -228,6 +318,16 @@
 
   .info > * {
     min-height: 100px;
+  }
+
+  .collapsedSelectionMenu {
+    margin: -25% 0% 0% 12%;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .selectionMenuOptions {
+    margin-left: 20%;
   }
 
   .previousButton,
@@ -318,5 +418,16 @@
   100% {
     opacity: 1;
     transform: translateX(0%);
+  }
+}
+
+@keyframes selectionMenuAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
