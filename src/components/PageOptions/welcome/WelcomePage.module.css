@@ -183,21 +183,34 @@
 
   .collapsedSelectionMenu {
     display: flex;
-    background: none;
+    background: -webkit-linear-gradient(#47f88b, rgb(44, 175, 72));
     border: none;
+    border-radius: 10%;
     justify-content: center;
     align-items: center;
     flex: 0.1;
     margin: -4% 0% 0% 70%;
-    width: fit-content;
+    width: 25%;
     z-index: 2;
+  }
+
+  .collapsedSelectionMenu:hover {
+    cursor: pointer;
+    color: white;
+    background: -webkit-linear-gradient(#38c76f, rgb(34, 136, 56));
+
+  }
+
+  .collapsedSelectionMenu:active {
+    background: -webkit-linear-gradient(#2da15a, rgb(16, 63, 26));
+
   }
 
   .selectionMenuOptions {
     height: 300px;
     z-index: 1;
     position: absolute;
-    margin-left: 53%;
+    margin-left: 61%;
     width: 500px;
     animation: selectionMenuAnimation 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
@@ -217,7 +230,7 @@
     margin-top: -4.5%;
   }
   .selectionMenuOptions {
-    margin: 2% 0% 0% 50%;
+    margin: 2% 0% 0% 57%;
   }
 }
 
@@ -299,7 +312,7 @@
 
 @media (max-width: 660px) {
   .collapsedSelectionMenu {
-    margin: -8.5% 0% 0% 70%;
+    margin: -7.5% 0% 0% 70%;
     width: 25%;
   }
 }
@@ -321,13 +334,14 @@
   }
 
   .collapsedSelectionMenu {
-    margin: -20% 0% 0% 12%;
+    margin: -14% 0% 0% 12%;
     justify-content: flex-start;
-    width: auto;
+    min-height: 30px;
+    width: fit-content;
   }
 
   .selectionMenuOptions {
-    margin: 7% 0% 0% 5%;
+    margin: 10% 0% 0% 5%;
   }
 
   .previousButton,
@@ -355,7 +369,7 @@
 
 @media (max-width: 500px) {
   .collapsedSelectionMenu {
-    margin: -25% 0% 0% 8%;
+    margin: -16% 0% 0% 8%;
   }
   .selectionMenuOptions {
     margin: 19% 0% 0% 0%;
