@@ -148,8 +148,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 200%;
-    width: 60%;
+    margin: 0% 0% 0% 0%;
+    height: 100%;
+    width: 100%;
   }
 
   /* Force the first button on to second row. */
@@ -185,6 +186,12 @@
 
   .info2 > button:nth-child(4n) {
     grid-column: 4;
+  }
+}
+
+@media (max-width: 480px) {
+  .info2 > button {
+    width: 43%;
   }
 }
 

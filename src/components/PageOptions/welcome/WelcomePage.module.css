@@ -207,11 +207,14 @@
   }
 
   .selectionMenuOptions {
-    height: 300px;
+    height: 600px;
+    width: 300px;
+    margin: 2% 0% 0% 65%;
     z-index: 1;
     position: absolute;
-    margin-left: 61%;
-    width: 500px;
+    border-color: rgb(63, 132, 236);
+    border-style: none solid solid solid;
+    border-radius: 2%;
     animation: selectionMenuAnimation 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
@@ -225,12 +228,20 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1480px) {
+  .selectionMenuOptions {
+    margin: 2% 0% 0% 63%;
+  }
+}
+
+@media (max-width: 1350px) {
   .collapsedSelectionMenu {
     margin-top: -4.5%;
   }
   .selectionMenuOptions {
-    margin: 2% 0% 0% 57%;
+    margin: 3% 0% 0% 63%;
+    border-style: none none solid solid;
+
   }
 }
 
@@ -293,11 +304,9 @@
   }
 
   .selectionMenuOptions {
-    height: 300px;
     z-index: 1;
     position: absolute;
-    margin-left: 40%;
-    width: 500px;
+    margin: 5% 0% 0% 45%;
     animation: selectionMenuAnimation 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
@@ -342,6 +351,7 @@
 
   .selectionMenuOptions {
     margin: 10% 0% 0% 5%;
+    border-style: none solid solid none;
   }
 
   .previousButton,
