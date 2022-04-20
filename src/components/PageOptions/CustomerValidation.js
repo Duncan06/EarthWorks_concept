@@ -73,6 +73,7 @@ export default class CustomerValidation extends React.Component {
         <div className={classes.customerText}>
           <label for="firstName">First Name:</label>
           <input
+            id="firstName"
             name="firstName"
             placeholder="First Name"
             value={this.state.firstName}
@@ -80,9 +81,11 @@ export default class CustomerValidation extends React.Component {
           />
           <div className={classes.textError}> {this.state.firstNameError} </div>
         </div>
+
         <div className={classes.customerText}>
-          <label for="LastName">Last Name:</label>
+          <label for="lastName">Last Name:</label>
           <input
+            id="lastName"
             name="lastName"
             placeholder="Last Name"
             value={this.state.lastName}
@@ -90,9 +93,11 @@ export default class CustomerValidation extends React.Component {
           />
           <div className={classes.textError}> {this.state.lastNameError} </div>
         </div>
+
         <div className={classes.customerText}>
           <label for="email">Email:</label>
           <input
+            id="email"
             name="email"
             placeholder="Example@gmail.com"
             value={this.state.email}
@@ -100,39 +105,66 @@ export default class CustomerValidation extends React.Component {
           />
           <div className={classes.textError}> {this.state.emailError} </div>
         </div>
+
+        <div className={classes.checkboxTitle}>Types of related work</div>
         <div className={classes.jobOptions}>
           <label for="foundationLeveling">Foundation Leveling</label>
           <input
             type="checkbox"
+            id="foundationLeveling"
             name="foundationLeveling"
             onChange={this.handleChange}
           />
           <label for="irrigation">Irrigation</label>
           <input
             type="checkbox"
+            id="irrigation"
             name="irrigation"
             onChange={this.handleChange}
           />
           <label for="siteAnalysis">Site Analysis</label>
           <input
             type="checkbox"
+            id="siteAnalysis"
             name="siteAnalysis"
             onChange={this.handleChange}
           />
           <label for="consulting">Consulting</label>
           <input
             type="checkbox"
+            id="consulting"
             name="consulting"
             onChange={this.handleChange}
           />
           <label for="codeCompliance">Code Compliance</label>
           <input
             type="checkbox"
+            id="codeCompliance"
             name="codeCompliance"
             onChange={this.handleChange}
           />
         </div>
-        <button type="submit" className={classes.submitButton}>Submit</button>
+
+        <div className={classes.dates}>
+          <label for="startDate">Desired start date:</label>
+          <input
+            type="date"
+            id="startDate"
+            name="startDate"
+            onChange={this.handleChange}
+          />
+          <label for="endDate">Desired end date:</label>
+          <input
+            type="date"
+            id="endDate"
+            name="endDate"
+            onChange={this.handleChange}
+          />
+        </div>
+
+        <button type="submit" className={classes.submitButton}>
+          Submit
+        </button>
       </form>
     );
   }

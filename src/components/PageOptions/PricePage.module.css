@@ -53,7 +53,7 @@
 }
 
 .customerText > * {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .textError {
@@ -67,11 +67,22 @@
 }
 
 .jobOptions > * { 
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .jobOptions > input {
-  margin-top: -5%;
+  margin: -3% 0% 0% 30%;
+}
+
+.checkboxTitle {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.dates {
+  display: flex;
+  gap: 1%;
+  margin: 5% 0% 0% 0%;
 }
 
 .submitButton {
