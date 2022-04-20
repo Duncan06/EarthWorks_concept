@@ -1,10 +1,14 @@
 import React from "react";
+import classes from "./PricePage.module.css";
 
 export default class CustomerValidation extends React.Component {
   state = {
     firstName: "",
+    lastName: "",
     email: "",
-    password: "",
+    firstNameError: "No first name provided.",
+    lastNameError: "No last name provided.",
+    emailError: "No email provided.",
   };
 
   handleChange = (event) => {
@@ -23,8 +27,8 @@ export default class CustomerValidation extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div>
+      <form className={classes.customerInfo} onSubmit={this.handleSubmit}>
+        <div className={classes.customerText}>
           <label for="firstName">First Name:</label>
           <input
             name="firstName"
@@ -32,6 +36,27 @@ export default class CustomerValidation extends React.Component {
             value={this.state.firstName}
             onChange={this.handleChange}
           />
+          <div className={classes.textError}> {this.state.firstNameError} </div>
+        </div>
+        <div className={classes.customerText}>
+          <label for="LastName">Last Name:</label>
+          <input
+            name="lastName"
+            placeholder="Last Name"
+            value={this.state.lastName}
+            onChange={this.handleChange}
+          />
+          <div className={classes.textError}> {this.state.lastNameError} </div>
+        </div>
+        <div className={classes.customerText}>
+          <label for="email">Email:</label>
+          <input
+            name="email"
+            placeholder="Example@gmail.com"
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+          <div className={classes.textError}> {this.state.emailError} </div>
         </div>
       </form>
     );

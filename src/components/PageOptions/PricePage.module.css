@@ -47,9 +47,18 @@
   align-items: center;
 }
 
-.mainPrice2 > *:nth-child(n + 2) {
-  font-size: x-large;
+.customerInfo {
+  font-size: large;
   text-align: center;
+}
+
+.customerText > * {
+  margin-top: 5%;
+}
+
+.textError {
+  color: red;
+  font-size: small;
 }
 
 @media (max-width: 1000px) {
