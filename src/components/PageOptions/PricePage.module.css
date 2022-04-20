@@ -93,6 +93,7 @@
 
 .jobOptions > * { 
   margin-top: 3%;
+  cursor: pointer;
 }
 
 .jobOptions > input {
