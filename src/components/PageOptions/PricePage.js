@@ -1,4 +1,5 @@
 import classes from "./PricePage.module.css";
+import CustomerValidation from "./CustomerValidation";
 
 function PricePage() {
   return (
@@ -23,17 +24,8 @@ function PricePage() {
           </div>
         </div>
         <div className={classes.mainPrice2}>
-          <h1 className={classes.innerTitle}>List For Consideration</h1>
-          <div className={classes.mainPrice2Text}>
-            <p>Size of lot</p>
-            <p>Days of work</p>
-            <p>Season</p>
-            <p>Property values in area</p>
-            <p>Access to work space</p>
-            <p>Going over contracted hours</p>
-            <p>Location</p>
-            <p>Necessary equipment rentals</p>
-          </div>
+          <h1 className={classes.innerTitle}>Customer Info</h1>
+          <CustomerValidation />
         </div>
       </div>
     </div>
