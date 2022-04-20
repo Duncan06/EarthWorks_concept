@@ -69,7 +69,7 @@ export default class CustomerValidation extends React.Component {
     return (
       <form className={classes.customerInfo} onSubmit={this.handleSubmit}>
         <div className={classes.customerText}>
-          <label htmlFor="firstName">First Name:</label>
+          <label htmlFor="firstName">First Name: </label>
           <input
             id="firstName"
             name="firstName"
@@ -81,7 +81,7 @@ export default class CustomerValidation extends React.Component {
         </div>
 
         <div className={classes.customerText}>
-          <label htmlFor="lastName">Last Name:</label>
+          <label htmlFor="lastName">Last Name: </label>
           <input
             id="lastName"
             name="lastName"
@@ -93,7 +93,7 @@ export default class CustomerValidation extends React.Component {
         </div>
 
         <div className={classes.customerText}>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email: </label>
           <input
             id="email"
             name="email"
