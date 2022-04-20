@@ -71,7 +71,7 @@
 }
 
 .jobOptions > input {
-  margin: -3% 0% 0% 30%;
+  margin: -5% 0% 0% 10%;
 }
 
 .checkboxTitle {
@@ -81,6 +81,7 @@
 
 .dates {
   display: flex;
+  flex-direction: column;
   gap: 1%;
   margin: 5% 0% 0% 0%;
 }
