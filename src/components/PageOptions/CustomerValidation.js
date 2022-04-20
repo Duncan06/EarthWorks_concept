@@ -23,6 +23,11 @@ export default class CustomerValidation extends React.Component {
     let firstNameError = "";
     let lastNameError = "";
     let emailError = "";
+    let startDateError = "";
+    let endDateError = "";
+    const currentStartDate = new Date(`${this.state.startDate}, 00:00:00`);
+    const currentEndDate = new Date(`${this.state.endDate}, 00:00:00`);
+    const date = new Date();
 
     if (this.state.firstName === "") {
       firstNameError = "No first name provided.";
@@ -48,8 +53,28 @@ export default class CustomerValidation extends React.Component {
       this.setState({ emailError });
     }
 
-    if (firstNameError || lastNameError || emailError) {
-      this.setState({ firstNameError, lastNameError, emailError });
+    if (!this.state.startDate || currentStartDate < date) {
+      startDateError = "Please provide an appropriate date.";
+    }
+
+    if (!this.state.endDate || currentEndDate < date) {
+      endDateError = "Please provide an appropriate date.";
+    }
+
+    if (
+      firstNameError ||
+      lastNameError ||
+      emailError ||
+      startDateError ||
+      endDateError
+    ) {
+      this.setState({
+        firstNameError,
+        lastNameError,
+        emailError,
+        startDateError,
+        endDateError,
+      });
       return false;
     }
 
@@ -151,6 +176,7 @@ export default class CustomerValidation extends React.Component {
             name="startDate"
             onChange={this.handleChange}
           />
+          <div className={classes.textError}> {this.state.startDateError} </div>
           <label htmlFor="endDate">Desired end date:</label>
           <input
             type="date"
@@ -158,6 +184,7 @@ export default class CustomerValidation extends React.Component {
             name="endDate"
             onChange={this.handleChange}
           />
+          <div className={classes.textError}> {this.state.endDateError} </div>
         </div>
 
         <button type="submit" className={classes.submitButton}>
