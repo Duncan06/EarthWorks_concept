@@ -6,6 +6,7 @@ const initialState = {
   lastName: "",
   email: "",
 };
+
 export default class CustomerValidation extends React.Component {
   state = initialState;
 
