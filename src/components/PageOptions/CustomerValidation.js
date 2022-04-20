@@ -1,15 +1,16 @@
 import React from "react";
 import classes from "./PricePage.module.css";
 
+const initialState = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  firstNameError: "",
+  lastNameError: "",
+  emailError: "",
+};
 export default class CustomerValidation extends React.Component {
-  state = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    firstNameError: "No first name provided.",
-    lastNameError: "No last name provided.",
-    emailError: "No email provided.",
-  };
+  state = initialState;
 
   handleChange = (event) => {
     const boxChecked = event.target.type === "checkbox";
@@ -20,9 +21,50 @@ export default class CustomerValidation extends React.Component {
     });
   };
 
+  validate = () => {
+    let firstNameError = "";
+    let lastNameError = "";
+    let emailError = "";
+
+    if (this.state.firstName === "") {
+      firstNameError = "No first name provided.";
+    }
+
+    if (this.state.lastName === "") {
+      lastNameError = "No last name provided.";
+    }
+
+    if (!this.state.email.includes("@")) {
+      emailError = "No email provided.";
+    }
+
+    if (firstNameError) {
+      this.setState({ firstNameError });
+    }
+
+    if (lastNameError) {
+      this.setState({ lastNameError });
+    }
+
+    if (emailError) {
+      this.setState({ emailError });
+    }
+
+    if (firstNameError || lastNameError || emailError) {
+      this.setState({ firstNameError, lastNameError, emailError });
+      return false;
+    }
+
+    return true;
+  };
+
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state);
+    const isValid = this.validate();
+    if (isValid) {
+      console.log(this.state);
+      this.setState(initialState);
+    }
   };
 
   render() {
@@ -58,6 +100,7 @@ export default class CustomerValidation extends React.Component {
           />
           <div className={classes.textError}> {this.state.emailError} </div>
         </div>
+        <button type="submit">Submit</button>
       </form>
     );
   }
