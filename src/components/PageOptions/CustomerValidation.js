@@ -69,7 +69,7 @@ export default class CustomerValidation extends React.Component {
     return (
       <form className={classes.customerInfo} onSubmit={this.handleSubmit}>
         <div className={classes.customerText}>
-          <label for="firstName">First Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input
             id="firstName"
             name="firstName"
@@ -81,7 +81,7 @@ export default class CustomerValidation extends React.Component {
         </div>
 
         <div className={classes.customerText}>
-          <label for="lastName">Last Name:</label>
+          <label htmlFor="lastName">Last Name:</label>
           <input
             id="lastName"
             name="lastName"
@@ -93,7 +93,7 @@ export default class CustomerValidation extends React.Component {
         </div>
 
         <div className={classes.customerText}>
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             id="email"
             name="email"
@@ -106,35 +106,35 @@ export default class CustomerValidation extends React.Component {
 
         <div className={classes.checkboxTitle}>Types of related work</div>
         <div className={classes.jobOptions}>
-          <label for="foundationLeveling">Foundation Leveling</label>
+          <label htmlFor="foundationLeveling">Foundation Leveling</label>
           <input
             type="checkbox"
             id="foundationLeveling"
             name="foundationLeveling"
             onChange={this.handleChange}
           />
-          <label for="irrigation">Irrigation</label>
+          <label htmlFor="irrigation">Irrigation</label>
           <input
             type="checkbox"
             id="irrigation"
             name="irrigation"
             onChange={this.handleChange}
           />
-          <label for="siteAnalysis">Site Analysis</label>
+          <label htmlFor="siteAnalysis">Site Analysis</label>
           <input
             type="checkbox"
             id="siteAnalysis"
             name="siteAnalysis"
             onChange={this.handleChange}
           />
-          <label for="consulting">Consulting</label>
+          <label htmlFor="consulting">Consulting</label>
           <input
             type="checkbox"
             id="consulting"
             name="consulting"
             onChange={this.handleChange}
           />
-          <label for="codeCompliance">Code Compliance</label>
+          <label htmlFor="codeCompliance">Code Compliance</label>
           <input
             type="checkbox"
             id="codeCompliance"
@@ -144,14 +144,14 @@ export default class CustomerValidation extends React.Component {
         </div>
 
         <div className={classes.dates}>
-          <label for="startDate">Desired start date:</label>
+          <label htmlFor="startDate">Desired start date:</label>
           <input
             type="date"
             id="startDate"
             name="startDate"
             onChange={this.handleChange}
           />
-          <label for="endDate">Desired end date:</label>
+          <label htmlFor="endDate">Desired end date:</label>
           <input
             type="date"
             id="endDate"
