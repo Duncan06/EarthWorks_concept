@@ -100,7 +100,39 @@ export default class CustomerValidation extends React.Component {
           />
           <div className={classes.textError}> {this.state.emailError} </div>
         </div>
-        <button type="submit">Submit</button>
+        <div className={classes.jobOptions}>
+          <label for="foundationLeveling">Foundation Leveling</label>
+          <input
+            type="checkbox"
+            name="foundationLeveling"
+            onChange={this.handleChange}
+          />
+          <label for="irrigation">Irrigation</label>
+          <input
+            type="checkbox"
+            name="irrigation"
+            onChange={this.handleChange}
+          />
+          <label for="siteAnalysis">Site Analysis</label>
+          <input
+            type="checkbox"
+            name="siteAnalysis"
+            onChange={this.handleChange}
+          />
+          <label for="consulting">Consulting</label>
+          <input
+            type="checkbox"
+            name="consulting"
+            onChange={this.handleChange}
+          />
+          <label for="codeCompliance">Code Compliance</label>
+          <input
+            type="checkbox"
+            name="codeCompliance"
+            onChange={this.handleChange}
+          />
+        </div>
+        <button type="submit" className={classes.submitButton}>Submit</button>
       </form>
     );
   }

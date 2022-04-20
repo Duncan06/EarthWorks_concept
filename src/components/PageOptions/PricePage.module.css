@@ -61,6 +61,24 @@
   font-size: small;
 }
 
+.jobOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobOptions > * { 
+  margin-top: 5%;
+}
+
+.jobOptions > input {
+  margin-top: -5%;
+}
+
+.submitButton {
+  margin-top: 10%;
+}
+
+
 @media (max-width: 1000px) {
   .mainPriceContainer {
     flex-direction: column;
