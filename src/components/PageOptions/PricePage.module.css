@@ -48,8 +48,33 @@
 }
 
 .customerInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   font-size: large;
   text-align: center;
+}
+
+.topContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+}
+
+.checkboxContainer {
+  flex: 1;
+  margin: -3% 0% 0% 0%;
+}
+
+.dateContainer {
+  align-self: center;
+  width: 60%;
 }
 
 .customerText > * {
@@ -71,11 +96,11 @@
 }
 
 .jobOptions > input {
-  margin: -5% 0% 0% 10%;
+  margin: -5% 0% 0% 15%;
 }
 
 .checkboxTitle {
-  font-size: x-large;
+  font-size: large;
   font-weight: bold;
 }
 
@@ -88,6 +113,8 @@
 
 .submitButton {
   margin-top: 10%;
+  align-self: center;
+  width: 40%;
 }
 
 
