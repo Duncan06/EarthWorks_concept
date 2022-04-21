@@ -47,10 +47,6 @@ export default class CustomerValidation extends React.Component {
       lastNameError = "No last name provided.";
     }
 
-    if (!this.state.email.includes("@")) {
-      emailError = "No email provided.";
-    }
-
     if (!this.state.email.match(mailFormat)) {
       emailError = "Not a proper email format."
     }
