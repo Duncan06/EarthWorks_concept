@@ -12,6 +12,8 @@ const initialState = {
   endDateError: "",
 };
 
+let lastWorkingEmail = { email: "" };
+
 export default class CustomerValidation extends React.Component {
   state = initialState;
 
@@ -91,6 +93,7 @@ export default class CustomerValidation extends React.Component {
     const isValid = this.validate();
     if (isValid) {
       console.log(this.state);
+      lastWorkingEmail = this.state;
       this.setState(initialState);
     }
   };
@@ -210,6 +213,31 @@ export default class CustomerValidation extends React.Component {
         <button type="submit" className={classes.submitButton}>
           Submit
         </button>
+
+        {lastWorkingEmail.email !== "" && (
+          <div>
+            <div>
+              Click the link below to send the last submitted information
+              through email:{" "}
+            </div>
+            {/* %0D%0A creates new line in the email. Formatted for email structure to avoid unwanted newlines.*/}
+            <a
+              href={`mailto:j.c.earthworks@gmail.com?subject=Project Request&body=Start: ${
+                lastWorkingEmail.startDate
+              }%0D%0AEnd: ${lastWorkingEmail.endDate
+              }%0D%0A%0D%0AAreas:${lastWorkingEmail.foundationLeveling ? "Foundation leveling," : ""
+                } ${lastWorkingEmail.irrigation ? "Irrigation," : ""} ${
+                lastWorkingEmail.siteAnalysis ? "Site Analysis," : ""
+              } ${lastWorkingEmail.consulting ? "Consulting," : ""} ${
+                lastWorkingEmail.codeCompliance ? "Code compliance" : ""
+              }%0D%0AFirst Name: ${lastWorkingEmail.firstName
+              }%0D%0ALast Name: ${lastWorkingEmail.lastName
+              }%0D%0AEmail: ${lastWorkingEmail.email}`}
+            >
+              j.c.earthworks@gmail.com
+            </a>
+          </div>
+        )}
       </form>
     );
   }
