@@ -118,20 +118,20 @@ export default class CustomerValidation extends React.Component {
     }
     if (type === "checkbox") {
       return (
-        <div>
-          <label htmlFor={name}>{placeholderValue}</label>
+        <div className={classes.boxcheckLine}>
           <input
             type="checkbox"
             id={name}
             name={name}
             onChange={this.handleChange}
           />
+          <label htmlFor={name}>{placeholderValue}</label>
         </div>
       );
     }
     if (type === "date") {
       return (
-        <div>
+        <div className={classes.dateLine}>
           <label htmlFor={name}>{placeholderValue}</label>
           <input
             type="date"
