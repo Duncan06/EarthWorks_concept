@@ -225,7 +225,7 @@ export default class CustomerValidation extends React.Component {
               href={`mailto:j.c.earthworks@gmail.com?subject=Project Request&body=Start: ${
                 lastWorkingEmail.startDate
               }%0D%0AEnd: ${lastWorkingEmail.endDate
-              }%0D%0A%0D%0AAreas:${lastWorkingEmail.foundationLeveling ? "Foundation leveling," : ""
+              }%0D%0A%0D%0AAreas:${lastWorkingEmail.foundationLeveling ? " Foundation leveling," : ""
                 } ${lastWorkingEmail.irrigation ? "Irrigation," : ""} ${
                 lastWorkingEmail.siteAnalysis ? "Site Analysis," : ""
               } ${lastWorkingEmail.consulting ? "Consulting," : ""} ${
