@@ -217,7 +217,7 @@ export default class CustomerValidation extends React.Component {
         {lastWorkingEmail.email !== "" && (
           <div>
             <div>
-              Click the link below to send the last submitted information
+              Click the link below to send the last valid submission's information
               through email:{" "}
             </div>
             {/* %0D%0A creates new line in the email. Formatted for email structure to avoid unwanted newlines.*/}
