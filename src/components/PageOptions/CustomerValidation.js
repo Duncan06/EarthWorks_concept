@@ -36,7 +36,7 @@ export default class CustomerValidation extends React.Component {
     const currentEndDate = new Date(`${this.state.endDate}, 00:00:00`);
     const date = new Date();
     // Simple verification, https://www.w3resource.com/javascript/form/email-validation.php
-    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const mailFormat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
 
     if (this.state.firstName === "") {
