@@ -38,7 +38,6 @@ export default class CustomerValidation extends React.Component {
     // Simple verification, https://www.w3resource.com/javascript/form/email-validation.php
     const mailFormat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
-
     if (this.state.firstName === "") {
       firstNameError = "No first name provided.";
     }
@@ -48,7 +47,7 @@ export default class CustomerValidation extends React.Component {
     }
 
     if (!this.state.email.match(mailFormat)) {
-      emailError = "Not a proper email format."
+      emailError = "Not a proper email format.";
     }
 
     if (firstNameError) {
@@ -100,115 +99,118 @@ export default class CustomerValidation extends React.Component {
     }
   };
 
+  // Increase readability by reducing wrappers.
+  createDesiredInput(type, name, placeholderValue = "", error = "") {
+    if (type === "text") {
+      return (
+        <div className={classes.customerText}>
+          <label htmlFor={name}>{placeholderValue}: </label>
+          <input
+            id={name}
+            name={name}
+            placeholder={placeholderValue}
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
+          <div className={classes.textError}> {error} </div>
+        </div>
+      );
+    }
+    if (type === "checkbox") {
+      return (
+        <div>
+          <label htmlFor={name}>{placeholderValue}</label>
+          <input
+            type="checkbox"
+            id={name}
+            name={name}
+            onChange={this.handleChange}
+          />
+        </div>
+      );
+    }
+    if (type === "date") {
+      return (
+        <div>
+          <label htmlFor={name}>{placeholderValue}</label>
+          <input
+            type="date"
+            id={name}
+            name={name}
+            onChange={this.handleChange}
+          />
+          <div className={classes.textError}> {error} </div>
+        </div>
+      );
+    }
+  }
+
   render() {
     return (
       <form className={classes.customerInfo} onSubmit={this.handleSubmit}>
         <div className={classes.topContainer}>
           <div className={classes.textContainer}>
-            <div className={classes.customerText}>
-              <label htmlFor="firstName">First Name: </label>
-              <input
-                id="firstName"
-                name="firstName"
-                placeholder="First Name"
-                value={this.state.firstName}
-                onChange={this.handleChange}
-              />
-              <div className={classes.textError}>
-                {" "}
-                {this.state.firstNameError}{" "}
-              </div>
-            </div>
-            <div className={classes.customerText}>
-              <label htmlFor="lastName">Last Name: </label>
-              <input
-                id="lastName"
-                name="lastName"
-                placeholder="Last Name"
-                value={this.state.lastName}
-                onChange={this.handleChange}
-              />
-              <div className={classes.textError}>
-                {" "}
-                {this.state.lastNameError}{" "}
-              </div>
-            </div>
-            <div className={classes.customerText}>
-              <label htmlFor="email">Email: </label>
-              <input
-                id="email"
-                name="email"
-                placeholder="Example@gmail.com"
-                value={this.state.email}
-                onChange={this.handleChange}
-              />
-              <div className={classes.textError}> {this.state.emailError} </div>
-            </div>
+            {this.createDesiredInput(
+              "text",
+              "firstName",
+              "First Name",
+              `${this.state.firstNameError}`
+            )}
+
+            {this.createDesiredInput(
+              "text",
+              "lastName",
+              "Last Name",
+              `${this.state.lastNameError}`
+            )}
+
+            {this.createDesiredInput(
+              "text",
+              "email",
+              "Email address",
+              `${this.state.emailError}`
+            )}
           </div>
 
           <div className={classes.checkboxContainer}>
             <div className={classes.checkboxTitle}>Types of related work</div>
             <div className={classes.jobOptions}>
-              <label htmlFor="foundationLeveling">Foundation Leveling</label>
-              <input
-                type="checkbox"
-                id="foundationLeveling"
-                name="foundationLeveling"
-                onChange={this.handleChange}
-              />
-              <label htmlFor="irrigation">Irrigation</label>
-              <input
-                type="checkbox"
-                id="irrigation"
-                name="irrigation"
-                onChange={this.handleChange}
-              />
-              <label htmlFor="siteAnalysis">Site Analysis</label>
-              <input
-                type="checkbox"
-                id="siteAnalysis"
-                name="siteAnalysis"
-                onChange={this.handleChange}
-              />
-              <label htmlFor="consulting">Consulting</label>
-              <input
-                type="checkbox"
-                id="consulting"
-                name="consulting"
-                onChange={this.handleChange}
-              />
-              <label htmlFor="codeCompliance">Code Compliance</label>
-              <input
-                type="checkbox"
-                id="codeCompliance"
-                name="codeCompliance"
-                onChange={this.handleChange}
-              />
+              {this.createDesiredInput(
+                "checkbox",
+                "foundationLeveling",
+                "Foundation Leveling"
+              )}
+              {this.createDesiredInput("checkbox", "irrigation", "Irrigation")}
+              {this.createDesiredInput(
+                "checkbox",
+                "siteAnalysis",
+                "Site Analysis"
+              )}
+              {this.createDesiredInput("checkbox", "consulting", "Consulting")}
+              {this.createDesiredInput(
+                "checkbox",
+                "codeCompliance",
+                "Code Compliance"
+              )}
             </div>
           </div>
         </div>
 
         <div className={classes.dateContainer}>
           <div className={classes.dates}>
-            <label htmlFor="startDate">Desired start date:</label>
-            <input
-              type="date"
-              id="startDate"
-              name="startDate"
-              onChange={this.handleChange}
-            />
-            <div className={classes.textError}>
-              {" "}
-              {this.state.startDateError}{" "}
-            </div>
-            <label htmlFor="endDate">Desired end date:</label>
-            <input
-              type="date"
-              id="endDate"
-              name="endDate"
-              onChange={this.handleChange}
-            />
-            <div className={classes.textError}> {this.state.endDateError} </div>
+            {this.createDesiredInput(
+              "date",
+              "startDate",
+              "Desired start date: ",
+              `${this.state.startDateError}`
+            )}
+
+            {this.createDesiredInput(
+              "date",
+              "endDate",
+              "Desired end date: ",
+              `${this.state.endDateError}`
+            )}
           </div>
         </div>
 
@@ -219,22 +221,26 @@ export default class CustomerValidation extends React.Component {
         {lastWorkingEmail.email !== "" && (
           <div>
             <div>
-              Click the link below to send the last valid submission's information
-              through email:{" "}
+              Click the link below to send the last valid submission's
+              information through email:{" "}
             </div>
             {/* %0D%0A creates new line in the email. Formatted for email structure to avoid unwanted newlines.*/}
             <a
               href={`mailto:j.c.earthworks@gmail.com?subject=Project Request&body=Start: ${
                 lastWorkingEmail.startDate
-              }%0D%0AEnd: ${lastWorkingEmail.endDate
-              }%0D%0A%0D%0AAreas:${lastWorkingEmail.foundationLeveling ? " Foundation leveling," : ""
-                } ${lastWorkingEmail.irrigation ? "Irrigation," : ""} ${
+              }%0D%0AEnd: ${lastWorkingEmail.endDate}%0D%0A%0D%0AAreas:${
+                lastWorkingEmail.foundationLeveling
+                  ? " Foundation leveling,"
+                  : ""
+              } ${lastWorkingEmail.irrigation ? "Irrigation," : ""} ${
                 lastWorkingEmail.siteAnalysis ? "Site Analysis," : ""
               } ${lastWorkingEmail.consulting ? "Consulting," : ""} ${
                 lastWorkingEmail.codeCompliance ? "Code compliance" : ""
-              }%0D%0AFirst Name: ${lastWorkingEmail.firstName
-              }%0D%0ALast Name: ${lastWorkingEmail.lastName
-              }%0D%0AEmail: ${lastWorkingEmail.email}`}
+              }%0D%0AFirst Name: ${
+                lastWorkingEmail.firstName
+              }%0D%0ALast Name: ${lastWorkingEmail.lastName}%0D%0AEmail: ${
+                lastWorkingEmail.email
+              }`}
             >
               j.c.earthworks@gmail.com
             </a>
