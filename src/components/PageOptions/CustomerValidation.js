@@ -35,6 +35,9 @@ export default class CustomerValidation extends React.Component {
     const currentStartDate = new Date(`${this.state.startDate}, 00:00:00`);
     const currentEndDate = new Date(`${this.state.endDate}, 00:00:00`);
     const date = new Date();
+    // Simple verification, https://www.w3resource.com/javascript/form/email-validation.php
+    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 
     if (this.state.firstName === "") {
       firstNameError = "No first name provided.";
@@ -46,6 +49,10 @@ export default class CustomerValidation extends React.Component {
 
     if (!this.state.email.includes("@")) {
       emailError = "No email provided.";
+    }
+
+    if (!this.state.email.match(mailFormat)) {
+      emailError = "Not a proper email format."
     }
 
     if (firstNameError) {
