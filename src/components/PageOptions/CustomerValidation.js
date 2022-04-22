@@ -66,7 +66,7 @@ export default class CustomerValidation extends React.Component {
       startDateError = "Please provide an appropriate date.";
     }
 
-    if (!this.state.endDate || currentEndDate < currentStartDate) {
+    if (!this.state.endDate || currentEndDate <= currentStartDate) {
       endDateError = "Please provide a date after the start date.";
     }
 
