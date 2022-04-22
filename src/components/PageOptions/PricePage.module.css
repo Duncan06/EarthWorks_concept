@@ -137,6 +137,15 @@
     max-height: 500px;
     margin-bottom: 5%;
   }
+
+  .textContainer {
+    flex: 0.6;
+    width: 5%;
+  }
+
+  .customerText > * {
+    width: 100%;
+  }
 }
 
 @keyframes fadeIn2 {

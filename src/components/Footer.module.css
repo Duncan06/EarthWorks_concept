@@ -13,3 +13,8 @@
   margin-right: 1%;
 }
 
+@media (max-width: 480px) {
+  .footerMain {
+    height: 1rem;
+  }
+}
