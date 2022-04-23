@@ -50,26 +50,24 @@ function Navigation(props) {
               </button>
             </div>
           </header>
-          {showing && (
-            <div className={nav.showOptions}>
-              <button className={nav.navButton} onClick={props.changeHome}>
-                <HomeIcon />
-                Home
-              </button>
-              <button className={nav.navButton} onClick={props.changeAbout}>
-                <DescriptionIcon />
-                About us
-              </button>
-              <button className={nav.navButton} onClick={props.changePrice}>
-                <PaymentsIcon />
-                Pricing/Estimates
-              </button>
-              <button className={nav.navButton} onClick={props.changeContact}>
-                <WorkIcon />
-                Contact For Hire
-              </button>
-            </div>
-          )}
+          <div className={showing ? nav.showOptions : nav.hidden}>
+            <button className={nav.navButton} onClick={props.changeHome}>
+              <HomeIcon />
+              Home
+            </button>
+            <button className={nav.navButton} onClick={props.changeAbout}>
+              <DescriptionIcon />
+              About us
+            </button>
+            <button className={nav.navButton} onClick={props.changePrice}>
+              <PaymentsIcon />
+              Pricing/Estimates
+            </button>
+            <button className={nav.navButton} onClick={props.changeContact}>
+              <WorkIcon />
+              Contact For Hire
+            </button>
+          </div>
         </div>
       );
     }

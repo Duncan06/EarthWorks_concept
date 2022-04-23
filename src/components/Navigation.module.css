@@ -51,7 +51,7 @@
   height: auto;
 }
 
-.showOptions {
+.showOptions, .hidden {
   opacity: 1;
   height: 300px;
   display: flex;
@@ -60,6 +60,13 @@
   z-index: 3;
   width: 100%;
   animation: navShow 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hidden {
+  opacity: 0;
+  height: 0px;
+  pointer-events: none;
+  animation: navHide 1.7s cubic-bezier(0.7, 0.82, 0.165, 1);
 }
 
 @media (max-width: 1000px) {
@@ -99,5 +106,21 @@
   100% {
     opacity: 1;
     height: 300px;
+  }
+}
+
+@keyframes navHide {
+  0% {
+    opacity: 1;
+    height: 300px;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    height: 0px;
   }
 }
